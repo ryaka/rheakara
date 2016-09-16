@@ -1,0 +1,215 @@
+body {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: 0.065em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ramabhadra', sans-serif;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+article {
+    font-size: 1.25em;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6 {
+    letter-spacing: 0em;
+}
+
+article h1 {
+    font-size: 1.5em;
+}
+
+article h2 {
+    font-size: 1.17em;
+}
+
+article h3 {
+    font-size: 1em;
+}
+
+article h4 {
+    font-size: .83em;
+}
+
+article h5 {
+    font-size: .67em;
+}
+
+/* bootstrap override */
+.navbar {
+    font-family: 'Ramabhadra', sans-serif;
+    padding: 5vh 5vw;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.0);
+    z-index: 20;
+    position: absolute;
+}
+
+.navbar-toggle.navbar-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #5e5e5e;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgba(255,255,255,0.0);
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+/* end bootstrap override */
+
+/* default hero renderings */
+.hero-container-full {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #252b33;
+    opacity: 0.6;
+}
+
+.hero-content {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+/* end default hero renderings */
+
+/* default content rendering for single */
+.content-container {
+    padding: 3%;
+    float: none;
+}
+
+.content {
+    padding: 3%;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    text-transform: none;
+}
+
+.content p {
+  margin: 1.5em 0;
+}
+
+.content blockquote p {
+    font-style: italic;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.content blockquote p:before {
+    content: open-quote;
+}
+
+.content blockquote p:after {
+    content: close-quote;
+}
+
+.content figure, .content blockquote {
+    border-width: 0px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 4% 0%;
+}
+
+.content figure img {
+    width: 100%;
+}
+/* end default content rendering for single */
+
+/* default rendering for list of content */
+.posts {
+    padding-top: 25px;
+    margin: auto;
+}
+
+.post {
+    border: 20px solid #fff;
+    padding: 0;
+    background-color:#fff;
+    overflow:hidden;
+}
+
+.post-img {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+.post-meta {
+    padding-top: 25px;
+}
+
+.post-title {
+    text-align: center;
+}
+
+.post-description {
+    text-align: center;
+    padding: 25px;
+}
+/* end default rendering for list of content */
+
+.footer {
+    color: #fff;
+    position: relative;
+    width: 100vw;
+    padding: 30px;
+    background-position: center;
+    background-color: #2A3438;
+    overflow: hidden;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover, .footer a:focus {
+    color: #5e5e5e;
+}
