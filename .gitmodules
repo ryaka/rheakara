@@ -1,0 +1,3 @@
+[submodule "themes/mila"]
+	path = themes/mila
+	url = https://github.com/ryaka/mila.git
