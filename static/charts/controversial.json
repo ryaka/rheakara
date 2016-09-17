@@ -1,9 +1,6 @@
 {
-    "legend": {
-        "align": "right",
-        "borderWidth": 0,
-        "layout": "vertical",
-        "verticalAlign": "middle"
+    "chart": {
+        "type": "line"
     },
     "series": [
         {
