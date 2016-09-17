@@ -107,12 +107,12 @@ ga('send', 'pageview');
 
 <script type="text/javascript">
     $(function() {
-        $.getJSON('..\/..\/charts\/demo.json', function(data) {
+        $.getJSON('..\/..\/charts\/controversial.json', function(data) {
             data.chart = data.chart || {};
             data.chart.renderTo = "some-chart-dude";
             data.credits = {
                 text: 'Source',
-                href: '..\/..\/charts\/demo.json'
+                href: '..\/..\/charts\/controversial.json'
             }
             new Highcharts.Chart(data);
         });
