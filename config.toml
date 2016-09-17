@@ -1,4 +1,4 @@
-baseurl = "https://ryaka.github.io/rheakara"
+baseurl = "https://www.rheakara.com"
 title = "Rhea Kara"
 author = "You"
 copyright = "Your Copyright"
@@ -13,20 +13,20 @@ theme = "mila"
 [params]
     author = "Rhea Kara Le"
     email = "hello@rheakara.com"
-    hero = "kitty1.jpg"
+    hero = "/img/kitty1.jpg"
     name = "Rhea Kara"
     description = "Welcome to my page"
 
 [params.nf404]
     name = "404"
     description = "The droids are not here"
-    hero = "kitty1.jpg"
+    hero = "/img/kitty1.jpg"
 
 [params.menu]
     [params.menu.blog]
         name = "blog"
         description = "A collection of thoughts and opinions"
-        hero = "blog.jpg"
+        hero = "/img/blog.jpg"
         url = "/blog/"
         weight = 1
 

@@ -1,6 +1,6 @@
 +++
 date = "2016-09-15T17:05:15-07:00"
-hero = "hello-world.jpg"
+hero = "/img/hello-world.jpg"
 title = "Hello World"
 description = "A post on how this blog came to be."
 tags = []

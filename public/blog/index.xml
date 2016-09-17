@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Rhea Kara</title>
-    <link>https://ryaka.github.io/rheakara/blog/</link>
+    <link>https://www.rheakara.com/blog/</link>
     <description>Recent content in Blog on Rhea Kara</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Your Copyright</copyright>
     <lastBuildDate>Thu, 15 Sep 2016 17:05:15 -0700</lastBuildDate>
-    <atom:link href="https://ryaka.github.io/rheakara/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rheakara.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World</title>
-      <link>https://ryaka.github.io/rheakara/blog/hello-world/</link>
+      <link>https://www.rheakara.com/blog/hello-world/</link>
       <pubDate>Thu, 15 Sep 2016 17:05:15 -0700</pubDate>
       
-      <guid>https://ryaka.github.io/rheakara/blog/hello-world/</guid>
+      <guid>https://www.rheakara.com/blog/hello-world/</guid>
       <description>
 
 &lt;p&gt;For some background, I was previously using Squarespace to host an equivalent
@@ -99,10 +99,10 @@ changes as I&amp;rsquo;m making changes to it along the way to fit my needs as t
     
     <item>
       <title>Photo Day (Test)</title>
-      <link>https://ryaka.github.io/rheakara/blog/test/</link>
+      <link>https://www.rheakara.com/blog/test/</link>
       <pubDate>Mon, 12 Sep 2016 12:04:00 -0700</pubDate>
       
-      <guid>https://ryaka.github.io/rheakara/blog/test/</guid>
+      <guid>https://www.rheakara.com/blog/test/</guid>
       <description>
 
 &lt;h1 id=&#34;a-portrait-of-milo&#34;&gt;A portrait of Milo&lt;/h1&gt;
@@ -112,7 +112,7 @@ changes as I&amp;rsquo;m making changes to it along the way to fit my needs as t
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../../img/kitty1.jpg&#34; /&gt;
+        &lt;img src=&#34;https://www.rheakara.com/img/kitty1.jpg&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -133,12 +133,12 @@ changes as I&amp;rsquo;m making changes to it along the way to fit my needs as t
 
 &lt;script type=&#34;text/javascript&#34;&gt;
     $(function() {
-        $.getJSON(&#39;..\/..\/charts\/controversial.json&#39;, function(data) {
+        $.getJSON(&#39;\/charts\/controversial.json&#39;, function(data) {
             data.chart = data.chart || {};
             data.chart.renderTo = &#34;some-chart-dude&#34;;
             data.credits = {
                 text: &#39;Source&#39;,
-                href: &#39;..\/..\/charts\/controversial.json&#39;
+                href: &#39;\/charts\/controversial.json&#39;
             }
             new Highcharts.Chart(data);
         });
