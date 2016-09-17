@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rhea Kara</title>
-    <link>https://www.rheakara.com/</link>
+    <link>https://ryaka.github.io/rheakara/</link>
     <description>Recent content on Rhea Kara</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Your Copyright</copyright>
     <lastBuildDate>Thu, 15 Sep 2016 17:05:15 -0700</lastBuildDate>
-    <atom:link href="https://www.rheakara.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ryaka.github.io/rheakara/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World</title>
-      <link>https://www.rheakara.com/blog/hello-world/</link>
+      <link>https://ryaka.github.io/rheakara/blog/hello-world/</link>
       <pubDate>Thu, 15 Sep 2016 17:05:15 -0700</pubDate>
       
-      <guid>https://www.rheakara.com/blog/hello-world/</guid>
+      <guid>https://ryaka.github.io/rheakara/blog/hello-world/</guid>
       <description>
 
 &lt;p&gt;For some background, I was previously using Squarespace to host an equivalent
@@ -99,10 +99,10 @@ changes as I&amp;rsquo;m making changes to it along the way to fit my needs as t
     
     <item>
       <title>About</title>
-      <link>https://www.rheakara.com/about/</link>
+      <link>https://ryaka.github.io/rheakara/about/</link>
       <pubDate>Mon, 12 Sep 2016 12:04:00 -0700</pubDate>
       
-      <guid>https://www.rheakara.com/about/</guid>
+      <guid>https://ryaka.github.io/rheakara/about/</guid>
       <description>
 
 &lt;h2 id=&#34;coming-soon&#34;&gt;Coming soon&lt;/h2&gt;
@@ -111,10 +111,10 @@ changes as I&amp;rsquo;m making changes to it along the way to fit my needs as t
     
     <item>
       <title>Photo Day (Test)</title>
-      <link>https://www.rheakara.com/blog/test/</link>
+      <link>https://ryaka.github.io/rheakara/blog/test/</link>
       <pubDate>Mon, 12 Sep 2016 12:04:00 -0700</pubDate>
       
-      <guid>https://www.rheakara.com/blog/test/</guid>
+      <guid>https://ryaka.github.io/rheakara/blog/test/</guid>
       <description>
 
 &lt;h1 id=&#34;a-portrait-of-milo&#34;&gt;A portrait of Milo&lt;/h1&gt;
@@ -124,7 +124,7 @@ changes as I&amp;rsquo;m making changes to it along the way to fit my needs as t
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://www.rheakara.com/img/kitty1.jpg&#34; /&gt;
+        &lt;img src=&#34;https://ryaka.github.io/rheakara/img/kitty1.jpg&#34; /&gt;
     
     
     &lt;figcaption&gt;
