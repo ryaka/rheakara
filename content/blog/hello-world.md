@@ -51,17 +51,13 @@ using Git (or any VCS), something I would be unable to do so using
 Squarespace, essentially allows me to have a backup of all publications of my
 website for any point in time.
 
-So not only do I now have an easy format to copy and transfer around all of my
-posts to USB, Dropbox, S3, or whatever, I also have a snapshot of everything
-that's been published on the page and the changes made between.
-
 I haven't ignored AWS S3 completely as I store a compressed backup there. According to
 their FAQ:
 
 >[if you store 10,000 objects with Amazon S3, you can on average expect to incur a loss of a single object once every 10,000,000 years](https://aws.amazon.com/s3/faqs/#data-protection).
 
-so it's just really nice to have around either way even if I am not using it as
-a hosting service and instead just as a compressed dump store instead.
+which makes it really nice to have around either way even if I am not using it as
+a hosting service, and instead just as a compressed dump store instead.
 
 Since the move I no longer have that nagging voice in my head about "that one"
 unnecessary expenditure. I also now have a very durable backup(s) of my site, so
@@ -74,7 +70,7 @@ two repositories:
 * [Website content](https://github.com/ryaka/rheakara)
 * [Hugo theme used] (https://github.com/ryaka/mila)
 
-I warn you that there isn't really any documentation(at the time of this writing) but
+I warn you there isn't really any documentation(at the time of this writing) but
 I do intent to add them. Feel free to use the theme if you'd like however I don't
-have any plans to offer support for the theme or any promises against breaking
-changes as I'm making changes to it along the way to fit my needs as they come.
+have any plans to offer support or promises against breaking changes as I'm making
+changes to fit my needs as they arise.
