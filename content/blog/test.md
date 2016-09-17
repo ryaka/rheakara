@@ -16,6 +16,6 @@ Didn't I tell you?
 
 Here's a chart hopefully
 
-{{<highcharts src="../../charts/demo.json" id="some-chart-dude">}}
+{{<highcharts src="../../charts/controversial.json" id="some-chart-dude">}}
 
 Continue from where we left off.....
