@@ -101,7 +101,41 @@ changes to fit my needs as they arise.&lt;/p&gt;
       <guid>https://www.rheakara.com/about/</guid>
       <description>
 
-&lt;h2 id=&#34;coming-soon&#34;&gt;Coming soon&lt;/h2&gt;
+&lt;h2 id=&#34;a-little-about-me&#34;&gt;A little about me&lt;/h2&gt;
+
+&lt;p&gt;Hi everyone, I&amp;rsquo;m Kara. I&amp;rsquo;m a Silicon Valley native who is still a resident of
+this wonderful, kind, and innovative place. I attended UC San Diego for my
+education where I received an education in maths, computer science, and
+chemistry. Ideas and passion easily fascinate me so you&amp;rsquo;ll
+often find me going on binges of books, documentations, collected data, and
+asking a barrage of questions to the nearest person whose eyes are lit with passion.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-little-about-this-site&#34;&gt;A little about this site&lt;/h2&gt;
+
+&lt;p&gt;I thought it&amp;rsquo;d be a good idea to have a place to host/index (software) &amp;ldquo;toys&amp;rdquo; I
+build so that they may have a place to live rather than be hopelessly forgotten.&lt;/p&gt;
+
+&lt;p&gt;There are also some things I strongly feel about so it just seems more satisfactory
+to shout out into the void than to hold these ideas and opinions to myself.
+In addition I often have to convince myself about certain things or to demonstrate
+I learned (something about) a particular topic. Verbalizing is one of the best ways
+I know how. This site&amp;rsquo;s blog is a manifestation of these two and I hope anyone
+out there reading will find some interest or enjoyment from what I write.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-little-about-this-site-technical&#34;&gt;A little about this site (technical)&lt;/h2&gt;
+
+&lt;p&gt;This site is statically generated using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and graciously
+hosted for free through &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;. The theme is
+something I made and is named after a beautiful cat named
+&lt;a href=&#34;http://github.com/ryaka/mila&#34;&gt;Mila&lt;/a&gt;. For all the major styling, I&amp;rsquo;m using
+&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;. The fonts used are
+&lt;a href=&#34;https://fonts.google.com/specimen/Ramabhadra&#34;&gt;Ramabhadra&lt;/a&gt; for the
+hero images and titles while all the content font is
+&lt;a href=&#34;https://fonts.google.com/specimen/Archivo+Black&#34;&gt;Archivo Black&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-contact&#34;&gt;How to contact&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;mailto:hello@rheakara.com&#34;&gt;Hi there!&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
