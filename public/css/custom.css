@@ -45,6 +45,7 @@ article h5 {
 
 /* bootstrap override */
 .navbar {
+    width: 100vw;
     font-family: 'Ramabhadra', sans-serif;
     padding: 5vh 5vw;
     border: none;
