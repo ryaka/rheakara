@@ -1,0 +1,895 @@
+{
+    "": {
+        "income": null
+    },
+    "ABW": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "AND": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "AFG": {
+        "income": "Low income",
+        "region": "South Asia"
+    },
+    "AGO": {
+        "income": "Upper middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "ALB": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "ANT": {
+        "income": "Upper middle income"
+    },
+    "ARE": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "ARG": {
+        "income": "Not classified",
+        "region": "Latin America & Caribbean"
+    },
+    "ARM": {
+        "income": "Lower middle income",
+        "region": "Europe & Central Asia"
+    },
+    "ASM": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "ATG": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "AUS": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "AUT": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "AZE": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "BDI": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "BEL": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "BEN": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "BFA": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "BGD": {
+        "income": "Lower middle income",
+        "region": "South Asia"
+    },
+    "BGR": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "BHR": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "BHS": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "BIH": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "BLR": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "BLZ": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "BMU": {
+        "income": "High income",
+        "region": "North America"
+    },
+    "BOL": {
+        "income": "Lower middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "BRA": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "BRB": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "BRN": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "BTN": {
+        "income": "Lower middle income",
+        "region": "South Asia"
+    },
+    "BWA": {
+        "income": "Upper middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "CAF": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "CAN": {
+        "income": "High income",
+        "region": "North America"
+    },
+    "CHE": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "CHI": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "CHL": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "CHN": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "CIV": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "CMR": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "COG": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "COL": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "COM": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "CPV": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "CRI": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "CSK": {
+        "income": "Upper middle income"
+    },
+    "CUB": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "CUW": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "CYM": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "CYP": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "CZE": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "DEU": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "DJI": {
+        "income": "Lower middle income",
+        "region": "Middle East & North Africa"
+    },
+    "DMA": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "DNK": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "DOM": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "DZA": {
+        "income": "Upper middle income",
+        "region": "Middle East & North Africa"
+    },
+    "ECU": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "EGY": {
+        "income": "Lower middle income",
+        "region": "Middle East & North Africa"
+    },
+    "ERI": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "ESP": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "EST": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "ETH": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "FIN": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "FJI": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "FRA": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "FRO": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "FSM": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "GAB": {
+        "income": "Upper middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "GBR": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "GEO": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "GHA": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "GIB": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "GIN": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "GMB": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "GNB": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "GNQ": {
+        "income": "Upper middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "GRC": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "GRD": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "GRL": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "GTM": {
+        "income": "Lower middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "GUM": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "GUY": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "HKG": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "HND": {
+        "income": "Lower middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "HRV": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "HTI": {
+        "income": "Low income",
+        "region": "Latin America & Caribbean"
+    },
+    "HUN": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "IDN": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "IMY": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "IND": {
+        "income": "Lower middle income",
+        "region": "South Asia"
+    },
+    "IRL": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "IRN": {
+        "income": "Upper middle income",
+        "region": "Middle East & North Africa"
+    },
+    "IRQ": {
+        "income": "Upper middle income",
+        "region": "Middle East & North Africa"
+    },
+    "ISL": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "ISR": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "ITA": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "JAM": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "JOR": {
+        "income": "Upper middle income",
+        "region": "Middle East & North Africa"
+    },
+    "JPN": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "KAZ": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "KEN": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "KGZ": {
+        "income": "Lower middle income",
+        "region": "Europe & Central Asia"
+    },
+    "KHM": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "KIR": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "KNA": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "KOR": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "KSV": {
+        "income": "Lower middle income",
+        "region": "Europe & Central Asia"
+    },
+    "KWT": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "LAO": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "LBN": {
+        "income": "Upper middle income",
+        "region": "Middle East & North Africa"
+    },
+    "LBR": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "LBY": {
+        "income": "Upper middle income",
+        "region": "Middle East & North Africa"
+    },
+    "LCA": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "LIE": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "LKA": {
+        "income": "Lower middle income",
+        "region": "South Asia"
+    },
+    "LSO": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "LTU": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "LUX": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "LVA": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "MAC": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "MAF": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "MAR": {
+        "income": "Lower middle income",
+        "region": "Middle East & North Africa"
+    },
+    "MCO": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "MDA": {
+        "income": "Lower middle income",
+        "region": "Europe & Central Asia"
+    },
+    "MDG": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "MDV": {
+        "income": "Upper middle income",
+        "region": "South Asia"
+    },
+    "MEX": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "MHL": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "MKD": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "MLI": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "MLT": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "MMR": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "MNE": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "MNG": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "MNP": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "MOZ": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "MRT": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "MUS": {
+        "income": "Upper middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "MWI": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "MYS": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "MYT": {
+        "income": "Upper middle income"
+    },
+    "NAM": {
+        "income": "Upper middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "NCL": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "NER": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "NGA": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "NIC": {
+        "income": "Lower middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "NLD": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "NOR": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "NPL": {
+        "income": "Low income",
+        "region": "South Asia"
+    },
+    "NRU": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "NZL": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "OMN": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "PAK": {
+        "income": "Lower middle income",
+        "region": "South Asia"
+    },
+    "PAN": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "PER": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "PHL": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "PLW": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "PNG": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "POL": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "PRI": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "PRK": {
+        "income": "Low income",
+        "region": "East Asia & Pacific"
+    },
+    "PRT": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "PRY": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "PYF": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "QAT": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "ROU": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "RUS": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "RWA": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SAU": {
+        "income": "High income",
+        "region": "Middle East & North Africa"
+    },
+    "SDN": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SEN": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SGP": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "SLB": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "SLE": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SLV": {
+        "income": "Lower middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "SMR": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "SOM": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SRB": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "SSD": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "STP": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SUN": {
+        "income": null
+    },
+    "SUR": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "SVK": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "SVN": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "SWE": {
+        "income": "High income",
+        "region": "Europe & Central Asia"
+    },
+    "SWZ": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SXM": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "SYC": {
+        "income": "High income",
+        "region": "Sub-Saharan Africa"
+    },
+    "SYR": {
+        "income": "Lower middle income",
+        "region": "Middle East & North Africa"
+    },
+    "TCA": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "TCD": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "TGO": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "THA": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "TJK": {
+        "income": "Lower middle income",
+        "region": "Europe & Central Asia"
+    },
+    "TKM": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "TLS": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "TON": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "TTO": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "TUN": {
+        "income": "Lower middle income",
+        "region": "Middle East & North Africa"
+    },
+    "TUR": {
+        "income": "Upper middle income",
+        "region": "Europe & Central Asia"
+    },
+    "TUV": {
+        "income": "Upper middle income",
+        "region": "East Asia & Pacific"
+    },
+    "TWN": {
+        "income": "High income",
+        "region": "East Asia & Pacific"
+    },
+    "TZA": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "UGA": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "UKR": {
+        "income": "Lower middle income",
+        "region": "Europe & Central Asia"
+    },
+    "URY": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "USA": {
+        "income": "High income",
+        "region": "North America"
+    },
+    "UZB": {
+        "income": "Lower middle income",
+        "region": "Europe & Central Asia"
+    },
+    "VCT": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "VEN": {
+        "income": "Upper middle income",
+        "region": "Latin America & Caribbean"
+    },
+    "VGB": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "VIR": {
+        "income": "High income",
+        "region": "Latin America & Caribbean"
+    },
+    "VNM": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "VUT": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "WBG": {
+        "income": "Lower middle income",
+        "region": "Middle East & North Africa"
+    },
+    "WSM": {
+        "income": "Lower middle income",
+        "region": "East Asia & Pacific"
+    },
+    "YEM": {
+        "income": "Lower middle income",
+        "region": "Middle East & North Africa"
+    },
+    "YUG": {
+        "income": null
+    },
+    "YUGf": {
+        "income": "Upper middle income"
+    },
+    "ZAF": {
+        "income": "Upper middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "COD": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    },
+    "ZMB": {
+        "income": "Lower middle income",
+        "region": "Sub-Saharan Africa"
+    },
+    "ZWE": {
+        "income": "Low income",
+        "region": "Sub-Saharan Africa"
+    }
+}

@@ -1,0 +1,677 @@
+{
+    "": {
+        "income": null
+    },
+    "ABW": {
+        "income": "Upper middle income"
+    },
+    "AND": {
+        "income": "High income"
+    },
+    "AFG": {
+        "income": "Low income"
+    },
+    "AGO": {
+        "income": "Lower middle income"
+    },
+    "ALB": {
+        "income": "Lower middle income"
+    },
+    "ANT": {
+        "income": "Upper middle income"
+    },
+    "ARE": {
+        "income": "High income"
+    },
+    "ARG": {
+        "income": "Upper middle income"
+    },
+    "ARM": {
+        "income": "Lower middle income"
+    },
+    "ASM": {
+        "income": "Upper middle income"
+    },
+    "ATG": {
+        "income": "Upper middle income"
+    },
+    "AUS": {
+        "income": "High income"
+    },
+    "AUT": {
+        "income": "High income"
+    },
+    "AZE": {
+        "income": "Lower middle income"
+    },
+    "BDI": {
+        "income": "Low income"
+    },
+    "BEL": {
+        "income": "High income"
+    },
+    "BEN": {
+        "income": "Low income"
+    },
+    "BFA": {
+        "income": "Low income"
+    },
+    "BGD": {
+        "income": "Low income"
+    },
+    "BGR": {
+        "income": "Lower middle income"
+    },
+    "BHR": {
+        "income": "Upper middle income"
+    },
+    "BHS": {
+        "income": "High income"
+    },
+    "BIH": {
+        "income": null
+    },
+    "BLR": {
+        "income": "Upper middle income"
+    },
+    "BLZ": {
+        "income": "Lower middle income"
+    },
+    "BMU": {
+        "income": "High income"
+    },
+    "BOL": {
+        "income": "Lower middle income"
+    },
+    "BRA": {
+        "income": "Upper middle income"
+    },
+    "BRB": {
+        "income": "Upper middle income"
+    },
+    "BRN": {
+        "income": "High income"
+    },
+    "BTN": {
+        "income": "Low income"
+    },
+    "BWA": {
+        "income": "Upper middle income"
+    },
+    "CAF": {
+        "income": "Low income"
+    },
+    "CAN": {
+        "income": "High income"
+    },
+    "CHE": {
+        "income": "High income"
+    },
+    "CHI": {
+        "income": "High income"
+    },
+    "CHL": {
+        "income": "Lower middle income"
+    },
+    "CHN": {
+        "income": "Low income"
+    },
+    "CIV": {
+        "income": "Lower middle income"
+    },
+    "CMR": {
+        "income": "Lower middle income"
+    },
+    "COG": {
+        "income": "Lower middle income"
+    },
+    "COL": {
+        "income": "Lower middle income"
+    },
+    "COM": {
+        "income": "Low income"
+    },
+    "CPV": {
+        "income": "Lower middle income"
+    },
+    "CRI": {
+        "income": "Lower middle income"
+    },
+    "CSK": {
+        "income": "Upper middle income"
+    },
+    "CUB": {
+        "income": "Lower middle income"
+    },
+    "CUW": {
+        "income": null
+    },
+    "CYM": {
+        "income": null
+    },
+    "CYP": {
+        "income": "High income"
+    },
+    "CZE": {
+        "income": null
+    },
+    "DEU": {
+        "income": "High income"
+    },
+    "DJI": {
+        "income": "Lower middle income"
+    },
+    "DMA": {
+        "income": "Lower middle income"
+    },
+    "DNK": {
+        "income": "High income"
+    },
+    "DOM": {
+        "income": "Lower middle income"
+    },
+    "DZA": {
+        "income": "Lower middle income"
+    },
+    "ECU": {
+        "income": "Lower middle income"
+    },
+    "EGY": {
+        "income": "Low income"
+    },
+    "ERI": {
+        "income": null
+    },
+    "ESP": {
+        "income": "High income"
+    },
+    "EST": {
+        "income": "Upper middle income"
+    },
+    "ETH": {
+        "income": "Low income"
+    },
+    "FIN": {
+        "income": "High income"
+    },
+    "FJI": {
+        "income": "Lower middle income"
+    },
+    "FRA": {
+        "income": "High income"
+    },
+    "FRO": {
+        "income": "High income"
+    },
+    "FSM": {
+        "income": "Lower middle income"
+    },
+    "GAB": {
+        "income": "Upper middle income"
+    },
+    "GBR": {
+        "income": "High income"
+    },
+    "GEO": {
+        "income": "Lower middle income"
+    },
+    "GHA": {
+        "income": "Low income"
+    },
+    "GIB": {
+        "income": "Upper middle income"
+    },
+    "GIN": {
+        "income": "Low income"
+    },
+    "GMB": {
+        "income": "Low income"
+    },
+    "GNB": {
+        "income": "Low income"
+    },
+    "GNQ": {
+        "income": "Low income"
+    },
+    "GRC": {
+        "income": "Upper middle income"
+    },
+    "GRD": {
+        "income": "Lower middle income"
+    },
+    "GRL": {
+        "income": "High income"
+    },
+    "GTM": {
+        "income": "Lower middle income"
+    },
+    "GUM": {
+        "income": "Upper middle income"
+    },
+    "GUY": {
+        "income": "Low income"
+    },
+    "HKG": {
+        "income": "High income"
+    },
+    "HND": {
+        "income": "Low income"
+    },
+    "HRV": {
+        "income": null
+    },
+    "HTI": {
+        "income": "Low income"
+    },
+    "HUN": {
+        "income": "Upper middle income"
+    },
+    "IDN": {
+        "income": "Low income"
+    },
+    "IMY": {
+        "income": "Upper middle income"
+    },
+    "IND": {
+        "income": "Low income"
+    },
+    "IRL": {
+        "income": "High income"
+    },
+    "IRN": {
+        "income": "Lower middle income"
+    },
+    "IRQ": {
+        "income": "Lower middle income"
+    },
+    "ISL": {
+        "income": "High income"
+    },
+    "ISR": {
+        "income": "High income"
+    },
+    "ITA": {
+        "income": "High income"
+    },
+    "JAM": {
+        "income": "Lower middle income"
+    },
+    "JOR": {
+        "income": "Lower middle income"
+    },
+    "JPN": {
+        "income": "High income"
+    },
+    "KAZ": {
+        "income": "Lower middle income"
+    },
+    "KEN": {
+        "income": "Low income"
+    },
+    "KGZ": {
+        "income": "Lower middle income"
+    },
+    "KHM": {
+        "income": "Low income"
+    },
+    "KIR": {
+        "income": "Lower middle income"
+    },
+    "KNA": {
+        "income": "Upper middle income"
+    },
+    "KOR": {
+        "income": "Upper middle income"
+    },
+    "KSV": {
+        "income": null
+    },
+    "KWT": {
+        "income": "High income"
+    },
+    "LAO": {
+        "income": "Low income"
+    },
+    "LBN": {
+        "income": "Lower middle income"
+    },
+    "LBR": {
+        "income": "Low income"
+    },
+    "LBY": {
+        "income": "Upper middle income"
+    },
+    "LCA": {
+        "income": "Lower middle income"
+    },
+    "LIE": {
+        "income": null
+    },
+    "LKA": {
+        "income": "Low income"
+    },
+    "LSO": {
+        "income": "Low income"
+    },
+    "LTU": {
+        "income": "Upper middle income"
+    },
+    "LUX": {
+        "income": "High income"
+    },
+    "LVA": {
+        "income": "Upper middle income"
+    },
+    "MAC": {
+        "income": "Upper middle income"
+    },
+    "MAF": {
+        "income": null
+    },
+    "MAR": {
+        "income": "Lower middle income"
+    },
+    "MCO": {
+        "income": null
+    },
+    "MDA": {
+        "income": "Lower middle income"
+    },
+    "MDG": {
+        "income": "Low income"
+    },
+    "MDV": {
+        "income": "Low income"
+    },
+    "MEX": {
+        "income": "Upper middle income"
+    },
+    "MHL": {
+        "income": "Lower middle income"
+    },
+    "MKD": {
+        "income": null
+    },
+    "MLI": {
+        "income": "Low income"
+    },
+    "MLT": {
+        "income": "Upper middle income"
+    },
+    "MMR": {
+        "income": "Low income"
+    },
+    "MNE": {
+        "income": null
+    },
+    "MNG": {
+        "income": "Lower middle income"
+    },
+    "MNP": {
+        "income": null
+    },
+    "MOZ": {
+        "income": "Low income"
+    },
+    "MRT": {
+        "income": "Low income"
+    },
+    "MUS": {
+        "income": "Lower middle income"
+    },
+    "MWI": {
+        "income": "Low income"
+    },
+    "MYS": {
+        "income": "Lower middle income"
+    },
+    "MYT": {
+        "income": "Upper middle income"
+    },
+    "NAM": {
+        "income": "Lower middle income"
+    },
+    "NCL": {
+        "income": "Upper middle income"
+    },
+    "NER": {
+        "income": "Low income"
+    },
+    "NGA": {
+        "income": "Low income"
+    },
+    "NIC": {
+        "income": "Low income"
+    },
+    "NLD": {
+        "income": "High income"
+    },
+    "NOR": {
+        "income": "High income"
+    },
+    "NPL": {
+        "income": "Low income"
+    },
+    "NRU": {
+        "income": null
+    },
+    "NZL": {
+        "income": "High income"
+    },
+    "OMN": {
+        "income": "Upper middle income"
+    },
+    "PAK": {
+        "income": "Low income"
+    },
+    "PAN": {
+        "income": "Lower middle income"
+    },
+    "PER": {
+        "income": "Lower middle income"
+    },
+    "PHL": {
+        "income": "Lower middle income"
+    },
+    "PLW": {
+        "income": null
+    },
+    "PNG": {
+        "income": "Lower middle income"
+    },
+    "POL": {
+        "income": "Lower middle income"
+    },
+    "PRI": {
+        "income": "Upper middle income"
+    },
+    "PRK": {
+        "income": "Lower middle income"
+    },
+    "PRT": {
+        "income": "Upper middle income"
+    },
+    "PRY": {
+        "income": "Lower middle income"
+    },
+    "PYF": {
+        "income": "High income"
+    },
+    "QAT": {
+        "income": "High income"
+    },
+    "ROU": {
+        "income": "Lower middle income"
+    },
+    "RUS": {
+        "income": "Upper middle income"
+    },
+    "RWA": {
+        "income": "Low income"
+    },
+    "SAU": {
+        "income": "Upper middle income"
+    },
+    "SDN": {
+        "income": "Low income"
+    },
+    "SEN": {
+        "income": "Lower middle income"
+    },
+    "SGP": {
+        "income": "High income"
+    },
+    "SLB": {
+        "income": "Low income"
+    },
+    "SLE": {
+        "income": "Low income"
+    },
+    "SLV": {
+        "income": "Lower middle income"
+    },
+    "SMR": {
+        "income": "High income"
+    },
+    "SOM": {
+        "income": "Low income"
+    },
+    "SRB": {
+        "income": null
+    },
+    "SSD": {
+        "income": null
+    },
+    "STP": {
+        "income": "Low income"
+    },
+    "SUN": {
+        "income": null
+    },
+    "SUR": {
+        "income": "Upper middle income"
+    },
+    "SVK": {
+        "income": null
+    },
+    "SVN": {
+        "income": null
+    },
+    "SWE": {
+        "income": "High income"
+    },
+    "SWZ": {
+        "income": "Lower middle income"
+    },
+    "SXM": {
+        "income": null
+    },
+    "SYC": {
+        "income": "Upper middle income"
+    },
+    "SYR": {
+        "income": "Lower middle income"
+    },
+    "TCA": {
+        "income": null
+    },
+    "TCD": {
+        "income": "Low income"
+    },
+    "TGO": {
+        "income": "Low income"
+    },
+    "THA": {
+        "income": "Lower middle income"
+    },
+    "TJK": {
+        "income": "Lower middle income"
+    },
+    "TKM": {
+        "income": "Lower middle income"
+    },
+    "TLS": {
+        "income": null
+    },
+    "TON": {
+        "income": "Lower middle income"
+    },
+    "TTO": {
+        "income": "Upper middle income"
+    },
+    "TUN": {
+        "income": "Lower middle income"
+    },
+    "TUR": {
+        "income": "Lower middle income"
+    },
+    "TUV": {
+        "income": null
+    },
+    "TWN": {
+        "income": "High income"
+    },
+    "TZA": {
+        "income": "Low income"
+    },
+    "UGA": {
+        "income": "Low income"
+    },
+    "UKR": {
+        "income": "Lower middle income"
+    },
+    "URY": {
+        "income": "Upper middle income"
+    },
+    "USA": {
+        "income": "High income"
+    },
+    "UZB": {
+        "income": "Lower middle income"
+    },
+    "VCT": {
+        "income": "Lower middle income"
+    },
+    "VEN": {
+        "income": "Upper middle income"
+    },
+    "VGB": {
+        "income": null
+    },
+    "VIR": {
+        "income": "High income"
+    },
+    "VNM": {
+        "income": "Low income"
+    },
+    "VUT": {
+        "income": "Lower middle income"
+    },
+    "WBG": {
+        "income": null
+    },
+    "WSM": {
+        "income": "Lower middle income"
+    },
+    "YEM": {
+        "income": "Low income"
+    },
+    "YUG": {
+        "income": null
+    },
+    "YUGf": {
+        "income": "Upper middle income"
+    },
+    "ZAF": {
+        "income": "Upper middle income"
+    },
+    "COD": {
+        "income": "Low income"
+    },
+    "ZMB": {
+        "income": "Low income"
+    },
+    "ZWE": {
+        "income": "Low income"
+    }
+}
