@@ -38,81 +38,77 @@ With all of this in mind I wanted to get a visual representation of this informa
 
 ## Results by region
 
-As a quick reference the BMI classifications are as follows:
+As a quick reference the BMI classifications are:
 
-```
-Classification   Range       Color
-===============================================
-Underweight      < 18.5      dark purple-purple
-Normal weight    18.5–24.9   blue-green
-Overweight       25–29.9     orange-red
-Obesity          > 30        red-black
-```
+Classification  |    Range   |   Color
+--------------- | ---------- | -----------
+Underweight     |  < 18.5    |  dark purple-purple
+Normal weight   |  18.5–24.9 |  blue-green
+Overweight      |  25–29.9   |  orange-red
+Obesity         |  > 30      |  red-black
 
-The graphs use a colored scale to indicate where a country falls in these
-categorizations. They are generated using a combination of country measurements
-reported by the WHO, and regional and income classifications as published by
-the World Bank.
 
-As a note the WHO provides their own regional classifications for countries
-but I quickly found it confusing with some of the classifications such as
-*South-East Asia* having the very unexpected memberships of: *Maldives, Bhutan,
-Sri Lanka, Nepal, India, Bangladesh, and North Korea*.
+I used BMI data published by the WHO, and regional and income classifications
+as published by the World Bank to generate the graphs. The graphs use a colored
+scale to indicate in what BMI range each country falls into.
+
+As a note the WHO provides their own regional classifications for countries,
+but I decided to not use it as I personally found it confusing and suspected it
+would be for others as well. For example countries labelled as being in the
+WHO's *South-East Asia* region include *Maldives, Bhutan, Sri Lanka, Nepal, India, Bangladesh, and North Korea*.
 
 Using the World Bank's regional grouping:
 
 {{<highchartsTreeBMI src="/charts/bmi.json" metasrc="/charts/worldbank2014m.json" id="bmi-wb-region" grouping="wbRegion" title="Mean BMI By World Bank Region">}}
 
 Looking at this, we can generally see that outside of the Sub-Saharan Africa,
-South Asia, and East Asian & Pacific, classifications, the countries of the world all
-have an average BMI putting them in the overweight or obese range.
+South Asia, and East Asian & Pacific, regions, the countries of the world all
+have an average BMI in the overweight or obese range.
 
 Looking at the extreme ends of the BMI range, we can see that there are no countries
-possessing an average BMI in the underweight range.
+possessing an underweight average BMI.
 
 > there are no countries possessing an average BMI in the underweight range
 
-On the other end, we can see that obesity has hit particularly hard to certain countries
-in the East Asia & Pacific classification. Looking more closely, the impact
-of obesity has hit hardest in the Pacific Islands. Taking the reasonable assumption
+At the same time, we can see that obesity has hit particularly hard to certain countries
+in the East Asia & Pacific region. Looking more closely, the impact
+of obesity has hit hardest in the Pacific Islands. Using the reasonable assumption
 of a normal distribution, this means at least half of all men and women in the
 countries of Nauru, Tonga, Samoa, and Palau are obese.
 
 > at least half of all men and women in the countries of Nauru, Tonga, Samoa,
 and Palau as obese
 
-The only other country that is hit as equally hard with this is Kuwait, although there
-is no shortage of countries just barely straddling that line. For example, here in my
-home country the U.S of A, men and women are only about 1 BMI point away from being
-in the same group.
+The only other country where this statement holds true is Kuwait, although there
+are many of other countries that are just shy of making the cut. For example, here in my
+home country the U.S of A, men and women are only about 1 BMI point away.
 
 ## Results by income
 
-Given that there is a [relationship between obesity and socioeconomics]
+Because there is a [relationship between obesity and socioeconomics]
 (http://www.prb.org/Publications/Articles/2013/obesity-socioeconomic-status.aspx),
-there is a strong pull to see if there is a visual pattern.
+I also wanted to see if there was a visual pattern between a country's income and
+its average BMI.
 
 For reference the World Bank's income grouping:
 
-```
-Classification(2014)   GNI / capita
-=====================================
-Low income             <= $1045
-Lower middle income    $1,046-$4,125
-Upper middle income    $4,126-$12,735
-Upper income           > $12,735
-```
+Classification(2014) |  GNI / capita
+-------------------- | --------------
+Low income           |  <= $1045
+Lower middle income  |  $1,046-$4,125
+Upper middle income  |  $4,126-$12,735
+Upper income         |  > $12,735
 
 {{<highchartsTreeBMI src="/charts/bmi.json" metasrc="/charts/worldbank2014m.json" id="bmi-wb-income" grouping="income" title="Mean BMI By World Bank Income Group">}}
 
-Grouping the countries by their income classification there seems to be a clear
-relationship between a country's GNI per capita and its average BMI.
+We see a clear relationship between a country's income and its average BMI
+through grouping countries by their income.
 
->Grouping the countries by their income classification there seems to be a clear
-relationship between a country's GNI per capita and its average BMI
+>We see a clear relationship between a country's income and its average BMI
+through grouping countries by their income
 
-In the low income end, all countries are within the normal range except for Sudan
-which is just barely above the line by 0.2 points.
+In the low income group, all countries have a normal average BMI except for Sudan
+which is disqualified by only 0.2 points.
 
 The lower middle income group has the greatest spread with about half being in
 the normal range and half in the overweight or obese range. There needs to be
@@ -120,25 +116,24 @@ further research into this but I speculate that being above a certain income all
 countries to afford access to more "Westernized diets" which has been speculated
 as a [potential contribution to weight gain]
 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990627/). This could be due to
-affording more industrial processes for food or perhaps just greater importation.
-However this is all unfounded and leaves room for further exploration.
+being able to afford more industrial processing for food or perhaps just greater
+importation. However this is all unfounded and requires further exploration.
 
-Exiting these two classifications we once again see a homogenous pattern. Excluding
-what can be labelled Asian countries and Angola, all of the upper middle
-and high income countries are consistently overweight or obese. This may leave room
-for study in the countries of South Korea, China, Japan, Singapore, Thailand,
-China, and Angola, and if there is any trend for them to join the rest.
+In the upper middle and high income group, we once again see a nearly homogenous
+pattern. Excluding what can be labelled as Asian countries and Angola, all of the
+upper middle and high income countries possess an overweight or obese average BMI.
 
->Excluding what can be labelled Asian countries and Angola, all of the upper middle
-and high income countries are consistently overweight or obese
+>Excluding what can be labelled as Asian countries and Angola, all of the
+upper middle and high income countries possess an overweight or obese average BMI.
 
-A potentially interesting pattern I noticed were in the countries where the average
-BMI were split between between normal and overweight. Within the high income
-countries where this occurred, the female's was lower than the male's, but this
-trend was reversed in upper middle income countries. This actually gave me subject
-matter to look into on a follow-up post in a part 2.
+A potentially interesting pattern I noticed were the countries where the average
+BMI was split across normal and overweight between genders. The average female BMI
+was lower than the average male BMI in high income countries, but this trend was
+reversed in upper middle income countries. Looking into this peculiarity of gender
+differences actually led to me reading and writing quite a bit more than
+anticipated, and will be in second part as this post is already getting a bit long.
 
-Before finishing this post, here is the BMI plotted on a world map:
+Before ending this post, here is the BMI plotted on a world map:
 
 {{<highchartsMapBMI src="/charts/bmi.json" id="bmi-world-map" title="Mean BMI By Country 2014">}}
 
@@ -149,4 +144,7 @@ the world.
 [Part 2 coming soon]
 
 ## Notes
+- The direct link for the WHO dataset is broken. I worked around this by taking
+the dataset used in their [Interactive Graph]
+(http://gamapserver.who.int/gho/interactive_charts/ncd/risk_factors/bmi/atlas.html)
 - I've sent an email to the WHO about the broken dataset but have yet to receive a response
