@@ -44,7 +44,7 @@ published by The Atlantic.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.theatlantic.com/international/archive/2014/05/one-third-of-the-world-is-obese-overweight/371790/&#34;&gt;One-Third of the Global Population Is Overweight or Obese&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;With all of this in mind I wanted to get a visual representation of this information.&lt;/p&gt;
+&lt;p&gt;With all of this in mind I wanted to get a visual representation of this.&lt;/p&gt;
 
 &lt;h2 id=&#34;results-by-region&#34;&gt;Results by region&lt;/h2&gt;
 
@@ -87,7 +87,7 @@ published by The Atlantic.&lt;/p&gt;
 &lt;/table&gt;
 
 &lt;p&gt;I used BMI data published by the WHO, and regional and income classifications
-as published by the World Bank to generate the graphs. The graphs use a colored
+published by the World Bank to generate the graphs. The graphs use a colored
 scale to indicate in what BMI range each country falls into.&lt;/p&gt;
 
 &lt;p&gt;As a note the WHO provides their own regional classifications for countries,
@@ -312,8 +312,8 @@ and Palau as obese&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The only other country where this statement holds true is Kuwait, although there
-are many of other countries that are just shy of making the cut. For example, here in my
-home country the U.S of A, men and women are only about 1 BMI point away.&lt;/p&gt;
+are many other countries that are just shy of making the cut. For example, here in my
+home country the U.S of A, male and female are only about 1 BMI point away.&lt;/p&gt;
 
 &lt;h2 id=&#34;results-by-income&#34;&gt;Results by income&lt;/h2&gt;
 
@@ -546,12 +546,11 @@ its average BMI.&lt;/p&gt;
 &lt;/script&gt;
 &lt;/p&gt;
 
-&lt;p&gt;We see a clear relationship between a country&amp;rsquo;s income and its average BMI
-through grouping countries by their income.&lt;/p&gt;
+&lt;p&gt;Through grouping countries by their income, we see a clear correlation between a
+country&amp;rsquo;s income and its average BMI.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;We see a clear relationship between a country&amp;rsquo;s income and its average BMI
-through grouping countries by their income&lt;/p&gt;
+&lt;p&gt;we see a clear correlation between a country&amp;rsquo;s income and its average BMI&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;In the low income group, all countries have a normal average BMI except for Sudan
@@ -560,7 +559,7 @@ which is disqualified by only 0.2 points.&lt;/p&gt;
 &lt;p&gt;The lower middle income group has the greatest spread with about half being in
 the normal range and half in the overweight or obese range. There needs to be
 further research into this but I speculate that being above a certain income allows
-countries to afford access to more &amp;ldquo;Westernized diets&amp;rdquo; which has been speculated
+countries to afford access to more &amp;ldquo;Westernized diets&amp;rdquo;, which has been speculated
 as a &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990627/&#34;&gt;potential contribution to weight gain&lt;/a&gt;. This could be due to
 being able to afford more industrial processing for food or perhaps just greater
 importation. However this is all unfounded and requires further exploration.&lt;/p&gt;
@@ -571,15 +570,15 @@ upper middle and high income countries possess an overweight or obese average BM
 
 &lt;blockquote&gt;
 &lt;p&gt;Excluding what can be labelled as Asian countries and Angola, all of the
-upper middle and high income countries possess an overweight or obese average BMI.&lt;/p&gt;
+upper middle and high income countries possess an overweight or obese average BMI&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;A potentially interesting pattern I noticed were the countries where the average
-BMI was split across normal and overweight between genders. The average female BMI
+BMI for male and female was split across normal and overweight. The average female BMI
 was lower than the average male BMI in high income countries, but this trend was
 reversed in upper middle income countries. Looking into this peculiarity of gender
 differences actually led to me reading and writing quite a bit more than
-anticipated, and will be in second part as this post is already getting a bit long.&lt;/p&gt;
+anticipated, and will be in a second part as this post is already getting a bit long.&lt;/p&gt;
 
 &lt;p&gt;Before ending this post, here is the BMI plotted on a world map:&lt;/p&gt;
 
@@ -727,6 +726,7 @@ the world.&lt;/p&gt;
 &lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
 
 &lt;ul&gt;
+&lt;li&gt;The data used is from 2014&lt;/li&gt;
 &lt;li&gt;The direct link for the WHO dataset is broken. I worked around this by taking
 the dataset used in their &lt;a href=&#34;http://gamapserver.who.int/gho/interactive_charts/ncd/risk_factors/bmi/atlas.html&#34;&gt;Interactive Graph&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;I&amp;rsquo;ve sent an email to the WHO about the broken dataset but have yet to receive a response&lt;/li&gt;
