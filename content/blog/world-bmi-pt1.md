@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["data", "health"]
 date = "2016-10-03T14:44:46-07:00"
 hero = "/img/food.jpg"
 tags = []
@@ -34,7 +34,7 @@ published by The Atlantic.
 >[One-Third of the Global Population Is Overweight or Obese]
 (http://www.theatlantic.com/international/archive/2014/05/one-third-of-the-world-is-obese-overweight/371790/)
 
-With all of this in mind I wanted to get a visual representation of this information.
+With all of this in mind I wanted to get a visual representation of this.
 
 ## Results by region
 
@@ -49,7 +49,7 @@ Obesity         |  > 30      |  red-black
 
 
 I used BMI data published by the WHO, and regional and income classifications
-as published by the World Bank to generate the graphs. The graphs use a colored
+published by the World Bank to generate the graphs. The graphs use a colored
 scale to indicate in what BMI range each country falls into.
 
 As a note the WHO provides their own regional classifications for countries,
@@ -80,8 +80,8 @@ countries of Nauru, Tonga, Samoa, and Palau are obese.
 and Palau as obese
 
 The only other country where this statement holds true is Kuwait, although there
-are many of other countries that are just shy of making the cut. For example, here in my
-home country the U.S of A, men and women are only about 1 BMI point away.
+are many other countries that are just shy of making the cut. For example, here in my
+home country the U.S of A, male and female are only about 1 BMI point away.
 
 ## Results by income
 
@@ -101,11 +101,10 @@ Upper income         |  > $12,735
 
 {{<highchartsTreeBMI src="/charts/bmi.json" metasrc="/charts/worldbank2014m.json" id="bmi-wb-income" grouping="income" title="Mean BMI By World Bank Income Group">}}
 
-We see a clear relationship between a country's income and its average BMI
-through grouping countries by their income.
+Through grouping countries by their income, we see a clear correlation between a
+country's income and its average BMI.
 
->We see a clear relationship between a country's income and its average BMI
-through grouping countries by their income
+>we see a clear correlation between a country's income and its average BMI
 
 In the low income group, all countries have a normal average BMI except for Sudan
 which is disqualified by only 0.2 points.
@@ -113,7 +112,7 @@ which is disqualified by only 0.2 points.
 The lower middle income group has the greatest spread with about half being in
 the normal range and half in the overweight or obese range. There needs to be
 further research into this but I speculate that being above a certain income allows
-countries to afford access to more "Westernized diets" which has been speculated
+countries to afford access to more "Westernized diets", which has been speculated
 as a [potential contribution to weight gain]
 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990627/). This could be due to
 being able to afford more industrial processing for food or perhaps just greater
@@ -124,14 +123,14 @@ pattern. Excluding what can be labelled as Asian countries and Angola, all of th
 upper middle and high income countries possess an overweight or obese average BMI.
 
 >Excluding what can be labelled as Asian countries and Angola, all of the
-upper middle and high income countries possess an overweight or obese average BMI.
+upper middle and high income countries possess an overweight or obese average BMI
 
 A potentially interesting pattern I noticed were the countries where the average
-BMI was split across normal and overweight between genders. The average female BMI
+BMI for male and female was split across normal and overweight. The average female BMI
 was lower than the average male BMI in high income countries, but this trend was
 reversed in upper middle income countries. Looking into this peculiarity of gender
 differences actually led to me reading and writing quite a bit more than
-anticipated, and will be in second part as this post is already getting a bit long.
+anticipated, and will be in a second part as this post is already getting a bit long.
 
 Before ending this post, here is the BMI plotted on a world map:
 
@@ -144,6 +143,7 @@ the world.
 [Part 2 coming soon]
 
 ## Notes
+- The data used is from 2014
 - The direct link for the WHO dataset is broken. I worked around this by taking
 the dataset used in their [Interactive Graph]
 (http://gamapserver.who.int/gho/interactive_charts/ncd/risk_factors/bmi/atlas.html)
