@@ -293,7 +293,7 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
                   &#39; and &lt;a href=&#34;http://databank.worldbank.org/data/download/site-content/OGHIST.xls&#34;&gt;World Bank&lt;/a&gt;.&#39;
               },
               title: {
-                  text: &#39;Mean BMI By World Bank Region&#39;
+                  text: &#39;Mean BMI Grouped By Region&#39;
               }
           });
         });
@@ -562,7 +562,7 @@ its average BMI.&lt;/p&gt;
                   &#39; and &lt;a href=&#34;http://databank.worldbank.org/data/download/site-content/OGHIST.xls&#34;&gt;World Bank&lt;/a&gt;.&#39;
               },
               title: {
-                  text: &#39;Mean BMI By World Bank Income Group&#39;
+                  text: &#39;Mean BMI Grouped By Income&#39;
               }
           });
         });
