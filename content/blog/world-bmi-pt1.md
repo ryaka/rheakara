@@ -69,7 +69,7 @@ have an average BMI in the overweight or obese range.
 Looking at the extreme ends of the BMI range, we can see that there are no countries
 possessing an underweight average BMI.
 
-> there are no countries possessing an average BMI in the underweight range
+> there are no countries possessing an underweight average BMI
 
 At the same time, we can see that obesity has hit particularly hard to certain countries
 in the East Asia & Pacific region. Looking more closely, the impact
@@ -77,8 +77,8 @@ of obesity has hit hardest in the Pacific Islands. Using the reasonable assumpti
 of a normal distribution, this means at least half of all men and women in the
 countries of Nauru, Tonga, Samoa, and Palau are obese.
 
-> at least half of all men and women in the countries of Nauru, Tonga, Samoa,
-and Palau as obese
+> at least half of all men and women in the countries of Nauru, Tonga, Samoa, and
+Palau are obese
 
 The only other country where this statement holds true is Kuwait, although there
 are many other countries that are just shy of making the cut. For example, here in my
@@ -105,7 +105,7 @@ Upper income         |  > $12,735
 Through grouping countries by their income, we see a clear correlation between a
 country's income and its average BMI.
 
->we see a clear correlation between a country's income and its average BMI
+> we see a clear correlation between a country's income and its average BMI
 
 In the low income group, all countries have a normal average BMI except for Sudan
 which is disqualified by only 0.2 points.
@@ -123,7 +123,7 @@ In the upper middle and high income group, we once again see a nearly homogenous
 pattern. Excluding what can be labelled as Asian countries and Angola, all of the
 upper middle and high income countries possess an overweight or obese average BMI.
 
->Excluding what can be labelled as Asian countries and Angola, all of the
+> Excluding what can be labelled as Asian countries and Angola, all of the
 upper middle and high income countries possess an overweight or obese average BMI
 
 A potentially interesting pattern I noticed were the countries where the average

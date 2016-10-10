@@ -164,6 +164,8 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
           var groups = {};
           var grouping = &#39;wbRegion&#39;;
 
+          var countryPMap = {};
+
           
           countries.forEach(function(country, index) {
             
@@ -186,11 +188,14 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
             
             var countryP = {
                 id: group.id + &#39;_&#39; + index,
-                name: country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;],
+                name: country.id + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;],
                 parent: group.id,
                 value: country.data[&#39;2014&#39;][&#39;Both sexes&#39;],
                 colorValue: country.data[&#39;2014&#39;][&#39;Both sexes&#39;]
             };
+
+            console.log(countryP.name);
+            countryPMap[countryP.name] = country;
 
             points.push(countryP);
 
@@ -239,6 +244,13 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
               tooltip: {
                 enabled: true,
                 formatter: function() {
+                  console.log(this.key);
+                  var country = countryPMap[this.key];
+                  console.log(country);
+                  if (country) {
+                    return country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;];
+                  }
+
                   return this.key;
                 }
               },
@@ -297,7 +309,7 @@ have an average BMI in the overweight or obese range.&lt;/p&gt;
 possessing an underweight average BMI.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;there are no countries possessing an average BMI in the underweight range&lt;/p&gt;
+&lt;p&gt;there are no countries possessing an underweight average BMI&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;At the same time, we can see that obesity has hit particularly hard to certain countries
@@ -307,8 +319,8 @@ of a normal distribution, this means at least half of all men and women in the
 countries of Nauru, Tonga, Samoa, and Palau are obese.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;at least half of all men and women in the countries of Nauru, Tonga, Samoa,
-and Palau as obese&lt;/p&gt;
+&lt;p&gt;at least half of all men and women in the countries of Nauru, Tonga, Samoa, and
+Palau are obese&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The only other country where this statement holds true is Kuwait, although there
@@ -421,6 +433,8 @@ its average BMI.&lt;/p&gt;
           var groups = {};
           var grouping = &#39;income&#39;;
 
+          var countryPMap = {};
+
           
           countries.forEach(function(country, index) {
             
@@ -443,11 +457,14 @@ its average BMI.&lt;/p&gt;
             
             var countryP = {
                 id: group.id + &#39;_&#39; + index,
-                name: country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;],
+                name: country.id + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;],
                 parent: group.id,
                 value: country.data[&#39;2014&#39;][&#39;Both sexes&#39;],
                 colorValue: country.data[&#39;2014&#39;][&#39;Both sexes&#39;]
             };
+
+            console.log(countryP.name);
+            countryPMap[countryP.name] = country;
 
             points.push(countryP);
 
@@ -496,6 +513,13 @@ its average BMI.&lt;/p&gt;
               tooltip: {
                 enabled: true,
                 formatter: function() {
+                  console.log(this.key);
+                  var country = countryPMap[this.key];
+                  console.log(country);
+                  if (country) {
+                    return country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;];
+                  }
+
                   return this.key;
                 }
               },
