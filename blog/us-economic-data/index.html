@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>About - Welcome to my page</title>
+    <title>US Economic Data - Welcome to my page</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> <meta name="generator" content="Hugo 0.16" />
 
@@ -73,63 +73,44 @@ ga('send', 'pageview');
 
 
         
-        <div class="hero-container" style="background-image: url(/img/about.jpg);">
+        <div class="hero-container" style="background-image: url(/img/dollars.png);">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1> About </h1>
-                <h4> A little about me and a little about this site </h4>
+                <h1> US Economic Data </h1>
+                <h4> The elections are coming! A side by side reference to some US economic data. </h4>
             </div>
         </div>
         
 
         <div class="content-container col-xs-11 col-sm-10 col-md-9 col-lg-8 center-block">
             <article class="content">
-                
+                <p>In the making but here&rsquo;s a chart for some things to be discussed:</p>
 
-<h2 id="a-little-about-me">A little about me</h2>
+ 
 
-<p>Hi everyone, I&rsquo;m Kara. I&rsquo;m a Silicon Valley native who is still a resident of
-this wonderful, kind, and innovative place. I attended UC San Diego for my
-education where I received an education in maths, computer science, and
-chemistry. Ideas and passion easily fascinate me so you&rsquo;ll
-often find me going on binges of books, documentations, collected data, and
-asking a barrage of questions to the nearest person whose eyes are lit with passion.</p>
+<figure id="some-chart-dude" class="highcharts"></figure>
 
-<h2 id="a-little-about-this-site">A little about this site</h2>
+<script type="text/javascript">
+    $(function() {
+        $.getJSON('\/charts\/controversial.json', function(data) {
+            data.credits = {
+                text: 'Source',
+                href: '\/charts\/controversial.json'
+            }          
+            $('#some-chart-dude').highcharts(data);
+        });
+    })
+</script>
 
-<p>I thought it&rsquo;d be a good idea to have a place to host/index (software) &ldquo;toys&rdquo; I
-build so that they may have a place to live rather than be hopelessly forgotten.</p>
-
-<p>There are also some things I strongly feel about so it just seems more satisfactory
-to shout out into the void than to hold these ideas and opinions to myself.
-In addition I often have to convince myself about certain things or to demonstrate
-I learned (something about) a particular topic. Verbalizing is one of the best ways
-I know how. This site&rsquo;s blog is a manifestation of these two and I hope anyone
-out there reading will find some interest or enjoyment from what I write.</p>
-
-<h2 id="a-little-about-this-site-technical">A little about this site (technical)</h2>
-
-<p>This site is statically generated using <a href="https://gohugo.io/">Hugo</a> and graciously
-hosted for free through <a href="https://pages.github.com/">Github Pages</a>. The theme is
-something I made and is named after a beautiful cat named
-<a href="http://github.com/ryaka/mila">Mila</a>. For all the major styling, I&rsquo;m using
-<a href="http://getbootstrap.com/">Bootstrap</a>. The fonts used are
-<a href="https://fonts.google.com/specimen/Ramabhadra">Ramabhadra</a> for the
-hero images and titles while all the content font is
-<a href="https://fonts.google.com/specimen/Archivo+Black">Archivo Black</a>.</p>
-
-<h2 id="how-to-contact">How to contact</h2>
-
-<p><a href="mailto:hello@rheakara.com">Hi there!</a></p>
 
             </article>
 
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'rheakara';
-    var disqus_identifier = 'https:\/\/www.rheakara.com\/about\/';
-    var disqus_title = 'About';
-    var disqus_url = 'https:\/\/www.rheakara.com\/about\/';
+    var disqus_identifier = 'https:\/\/www.rheakara.com\/blog\/us-economic-data\/';
+    var disqus_title = 'US Economic Data';
+    var disqus_url = 'https:\/\/www.rheakara.com\/blog\/us-economic-data\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
