@@ -82,7 +82,7 @@ ga('send', 'pageview');
         </div>
         
 
-        <div class="content-container col-xs-11 col-sm-10 col-md-9 col-lg-8 center-block">
+        <div class="content-container col-xs-12 col-sm-10 col-md-9 col-lg-8 center-block">
             <article class="content">
                 
 
@@ -314,9 +314,17 @@ WHO&rsquo;s <em>South-East Asia</em> region include <em>Maldives, Bhutan, Sri La
                 formatter: function() {
                   var country = countryPMap[this.key];
                   if (country) {
-                    return country.name + ' ' + country.data['2014']['Both sexes'];
+                    var male = country.data['2014']['Male'];
+                    var female = country.data['2014']['Female'];
+                    return '' +
+                    '<div>' +
+                      '<p>' + country.name + '</p>' +
+                      '<br>' +
+                      '<p>Male: ' + male + '</p>' +
+                      '<br>' +
+                      '<p>Female: ' + female + '</p>' +
+                    '</div>';
                   }
-
                   return this.key;
                 }
               },
@@ -580,9 +588,17 @@ its average BMI.</p>
                 formatter: function() {
                   var country = countryPMap[this.key];
                   if (country) {
-                    return country.name + ' ' + country.data['2014']['Both sexes'];
+                    var male = country.data['2014']['Male'];
+                    var female = country.data['2014']['Female'];
+                    return '' +
+                    '<div>' +
+                      '<p>' + country.name + '</p>' +
+                      '<br>' +
+                      '<p>Male: ' + male + '</p>' +
+                      '<br>' +
+                      '<p>Female: ' + female + '</p>' +
+                    '</div>';
                   }
-
                   return this.key;
                 }
               },

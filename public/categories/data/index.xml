@@ -245,9 +245,17 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
                 formatter: function() {
                   var country = countryPMap[this.key];
                   if (country) {
-                    return country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;];
+                    var male = country.data[&#39;2014&#39;][&#39;Male&#39;];
+                    var female = country.data[&#39;2014&#39;][&#39;Female&#39;];
+                    return &#39;&#39; +
+                    &#39;&lt;div&gt;&#39; +
+                      &#39;&lt;p&gt;&#39; + country.name + &#39;&lt;/p&gt;&#39; +
+                      &#39;&lt;br&gt;&#39; +
+                      &#39;&lt;p&gt;Male: &#39; + male + &#39;&lt;/p&gt;&#39; +
+                      &#39;&lt;br&gt;&#39; +
+                      &#39;&lt;p&gt;Female: &#39; + female + &#39;&lt;/p&gt;&#39; +
+                    &#39;&lt;/div&gt;&#39;;
                   }
-
                   return this.key;
                 }
               },
@@ -511,9 +519,17 @@ its average BMI.&lt;/p&gt;
                 formatter: function() {
                   var country = countryPMap[this.key];
                   if (country) {
-                    return country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;];
+                    var male = country.data[&#39;2014&#39;][&#39;Male&#39;];
+                    var female = country.data[&#39;2014&#39;][&#39;Female&#39;];
+                    return &#39;&#39; +
+                    &#39;&lt;div&gt;&#39; +
+                      &#39;&lt;p&gt;&#39; + country.name + &#39;&lt;/p&gt;&#39; +
+                      &#39;&lt;br&gt;&#39; +
+                      &#39;&lt;p&gt;Male: &#39; + male + &#39;&lt;/p&gt;&#39; +
+                      &#39;&lt;br&gt;&#39; +
+                      &#39;&lt;p&gt;Female: &#39; + female + &#39;&lt;/p&gt;&#39; +
+                    &#39;&lt;/div&gt;&#39;;
                   }
-
                   return this.key;
                 }
               },
