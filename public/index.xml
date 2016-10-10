@@ -167,6 +167,13 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
           var countryPMap = {};
 
           
+          
+          
+          countries = countries.sort(function(a, b) {
+            return a.data[&#39;2014&#39;][&#39;Both sexes&#39;] - b.data[&#39;2014&#39;][&#39;Both sexes&#39;];
+          });
+
+          
           countries.forEach(function(country, index) {
             
             
@@ -421,6 +428,13 @@ its average BMI.&lt;/p&gt;
           var grouping = &#39;income&#39;;
 
           var countryPMap = {};
+
+          
+          
+          
+          countries = countries.sort(function(a, b) {
+            return a.data[&#39;2014&#39;][&#39;Both sexes&#39;] - b.data[&#39;2014&#39;][&#39;Both sexes&#39;];
+          });
 
           
           countries.forEach(function(country, index) {
