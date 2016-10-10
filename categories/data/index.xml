@@ -196,30 +196,12 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
 
             countryPMap[countryP.name] = country;
 
-            points.push(countryP);
-
-            
-            
-            
-            for (var gender in country.data[&#39;2014&#39;]) {
-              if (!country.data[&#39;2014&#39;].hasOwnProperty(gender) || gender === &#39;Both sexes&#39;) {
-                continue;
-              }
-              var genderP = {
-                id: countryP.id + &#39;_&#39; + gender,
-                name: gender + &#39; &#39; + country.data[&#39;2014&#39;][gender],
-                parent: countryP.id,
-                value: country.data[&#39;2014&#39;][gender],
-                colorValue: country.data[&#39;2014&#39;][gender]
-              };
-
-              
-              if (!isNaN(genderP.value)) {
-                group.value += genderP.value;
-                group.genderPoints += 1;
-              }
-              points.push(genderP);
+            if (!isNaN(countryP.value)) {
+              group.value += countryP.value;
+              group.genderPoints += 1;
             }
+
+            points.push(countryP);
           });
 
           
@@ -470,30 +452,12 @@ its average BMI.&lt;/p&gt;
 
             countryPMap[countryP.name] = country;
 
-            points.push(countryP);
-
-            
-            
-            
-            for (var gender in country.data[&#39;2014&#39;]) {
-              if (!country.data[&#39;2014&#39;].hasOwnProperty(gender) || gender === &#39;Both sexes&#39;) {
-                continue;
-              }
-              var genderP = {
-                id: countryP.id + &#39;_&#39; + gender,
-                name: gender + &#39; &#39; + country.data[&#39;2014&#39;][gender],
-                parent: countryP.id,
-                value: country.data[&#39;2014&#39;][gender],
-                colorValue: country.data[&#39;2014&#39;][gender]
-              };
-
-              
-              if (!isNaN(genderP.value)) {
-                group.value += genderP.value;
-                group.genderPoints += 1;
-              }
-              points.push(genderP);
+            if (!isNaN(countryP.value)) {
+              group.value += countryP.value;
+              group.genderPoints += 1;
             }
+
+            points.push(countryP);
           });
 
           
