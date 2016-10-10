@@ -5,7 +5,7 @@ hero = "/img/pretty.jpg"
 tags = []
 title = "BMI Around the World Pt.2"
 description = "A look at gender differences or: One way to discover cultural beauty standards"
-draft = true
+draft = false
 +++
 
 [Part 1](/blog/world-bmi-pt1)

@@ -6,6 +6,7 @@ canonifyurls = true
 paginate = 5
 pluralizelisttitles = false
 
+disqusShortname = "rheakara"
 googleAnalytics = "UA-84231237-1"
 
 theme = "mila"

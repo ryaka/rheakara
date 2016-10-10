@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BMI Around the World Pt.2 - Welcome to my page</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> <meta name="generator" content="Hugo 0.16" />
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link href="https://www.rheakara.com/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://www.rheakara.com/css/custom.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ramabhadra" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://www.rheakara.com/js/bootstrap.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="https://code.highcharts.com/modules/treemap.js"></script>
+
+<script src="https://code.highcharts.com/maps/modules/map.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+ 
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-84231237-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header><nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand hidden-xs" href="https://www.rheakara.com">Home</a>
+            <div class="navbar-buttons">
+                <button type="button" class="navbar-toggle btn-template-main navbar-left collapsed" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="visible-xs">
+                    <a class="nav-link navbar-right" href="https://www.rheakara.com">Home</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link navbar-right" href="https://www.rheakara.com/blog/">blog</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link navbar-right" href="https://www.rheakara.com/about/">about</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+
+        
+        <div class="hero-container" style="background-image: url(/img/pretty.jpg);">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1> BMI Around the World Pt.2 </h1>
+                <h4> A look at gender differences or: One way to discover cultural beauty standards </h4>
+            </div>
+        </div>
+        
+
+        <div class="content-container col-xs-11 col-sm-10 col-md-9 col-lg-8 center-block">
+            <article class="content">
+                
+
+<p><a href="https://www.rheakara.com/blog/world-bmi-pt1">Part 1</a></p>
+
+<p>In my previous post I took a look at the average BMI around the world and one thing
+that stood out to me was the extreme difference in male and female BMI in certain
+countries. This in turn made me want to see how much difference there could be in
+different countries around the world and if there was any skew in one direction or
+the other. This is what this post will explore. I decided to make this into its
+own post because the previous one was already getting a bit long and in order to
+have a visual measurement, I had to change the way things were colored and scaled
+and I didn&rsquo;t want any potential confusion with sudden change.</p>
+
+<h2 id="the-west-is-blue-and-the-rest-of-the-world-is-mostly-red">The West is blue and the rest of the world is mostly red</h2>
+
+<p>For the scales used below, red indicates women have a higher BMI than men while
+blue indicates that men have a higher BMI than women. The darker the color, the
+more pronounced this difference. Roughly speaking, the more red the color, the heavier
+the women / lighter the men, and the more blue the color, the lighter the women /
+heavier the men.</p>
+
+  
+
+<figure id="bmi-world-map" class="highcharts"></figure>
+
+<script type="text/javascript">
+    $(function() {
+        function formatData(data) {
+          var countryLabels = data.geographies[0].features;
+
+          
+          var countries = countryLabels.map(function(c) {
+            return {
+              id: c.id,
+              name: c.name,
+              region: c.filters[0].name,
+              data: {}
+            };
+          });
+
+          
+          var countryData = data.geographies[0].themes[0].indicators;
+          countries.forEach(function(c, index) {
+            var mergedDataSet = c.data;
+            countryData.forEach(function(dataSet) {
+              var date = dataSet.date;
+              var gender = dataSet.name;
+
+              mergedDataSet[date] = mergedDataSet[date] || {};
+              mergedDataSet[date][gender] = dataSet.values[index];
+            });
+          });
+
+          
+          
+          return countries.map(function(c) {
+            return {
+              code: c.id,
+              name: c.name,
+              value: (c.data['2014']['Male'] - c.data['2014']['Female']).toFixed(1),
+              male: c.data['2014']['Male'],
+              female: c.data['2014']['Female']
+            };
+          });
+        }
+
+
+        $.getJSON('\/charts\/bmi.json', function(data) {
+            data.credits = {
+                text: 'Source',
+                href: '\/charts\/bmi.json'
+            }
+
+            var countries = formatData(data);
+
+            var countriesMap = {};
+            countries.forEach(function(c) {
+              countriesMap[c.code] = c;
+            });
+
+            
+            $('#bmi-world-map').highcharts('Map', {
+                title: {
+                    text: 'Mean BMI Difference By Country 2014'
+                },
+
+                mapNavigation: {
+                    enabled: true,
+                    buttonOptions: {
+                        verticalAlign: 'bottom'
+                    }
+                },
+
+                tooltip: {
+                    backgroundColor: 'none',
+                    borderWidth: 0,
+                    shadow: false,
+                    useHTML: true,
+                    padding: 0,
+                    formatter: function() {
+                      var country = countriesMap[this.point.code];
+                      console.log(this.point.code, country);
+                      if (country) {
+                        var both = country.value;
+                        var male = country.male;
+                        var female = country.female;
+                        return '' +
+                        '<div>' +
+                          '<p>' + this.key + ': ' + both + ' ' + '</p>' +
+                          '<p>' +
+                            'Male: ' + male + ' ' +
+                            'Female: ' + female + ' ' +
+                          '</p>' +
+                        '</div>';
+                      }
+                      return this.key;
+                    },
+                    positioner: function () {
+                        return { x: 0, y: 250 };
+                    }
+                },
+                colorAxis: {
+                    description: 'BMI Classifications',
+                    tickPositions: [-5, 0, 5],
+                    stops: [
+                        [0, '#ff0000'],
+                        [0.5, '#ffffff'],
+                        [1, '#0000ff']
+                    ]
+                },
+                series: [{
+                    data: countries,
+                    mapData: Highcharts.maps['custom/world'],
+                    joinBy: ['iso-a3', 'code'],
+                    name: 'Mean BMI',
+                    states: {
+                        hover: {
+                            color: '#BADA55'
+                        }
+                    }
+                }],
+                subtitle: {
+                    text: 'Source: ' +
+                    '<a href="http://apps.who.int/gho/data/view.main.12461?lang=en">WHO</a>'
+                }
+            });
+        });
+    })
+</script>
+
+
+    
+
+<figure id="bmi-wb-region" class="highcharts"></figure>
+
+<script type="text/javascript">
+    $(function() {
+        function formatData(data, metadata) {
+          var countryLabels = data.geographies[0].features;
+
+          
+          var countries = countryLabels.map(function(c) {
+            var countryMetaInfo = metadata[c.id];
+            if (!countryMetaInfo) {
+              countryMetaInfo = {};
+            }
+            if (countryMetaInfo.region === 'Not classified') {
+              countryMetaInfo.region = undefined;
+            }
+            if (countryMetaInfo.income === 'Not classified') {
+              countryMetaInfo.income = undefined;
+            }
+            return {
+              id: c.id,
+              name: c.name,
+              whoRegion: c.filters[0].name,
+              wbRegion: countryMetaInfo.region,
+              income: countryMetaInfo.income,
+              data: {}
+            };
+          });
+
+          
+          var countryData = data.geographies[0].themes[0].indicators;
+          countries.forEach(function(c, index) {
+            var mergedDataSet = c.data;
+            countryData.forEach(function(dataSet) {
+              var date = dataSet.date;
+              var gender = dataSet.name;
+
+              mergedDataSet[date] = mergedDataSet[date] || {};
+              mergedDataSet[date][gender] = dataSet.values[index];
+            });
+          });
+
+          
+          countries = countries.map(function(c) {
+            var genderDiff = c.data['2014']['Male'] - c.data['2014']['Female'];
+            genderDiff = Number(genderDiff.toFixed(1));
+            return Object.assign({}, c, {
+              value: genderDiff
+            });
+          })
+
+          return countries;
+        }
+
+        var promises = [
+            $.getJSON('\/charts\/worldbank2014m.json'),
+            $.getJSON('\/charts\/bmi.json')
+        ];
+
+        Promise.all(promises).then(function(dataSets) {
+          var metadata = dataSets[0];
+          var data = dataSets[1];
+
+          data.credits = {
+              text: 'Source',
+              href: '\/charts\/bmi.json'
+          }
+
+          var countries = formatData(data, metadata);
+
+          var points = [];
+          var groups = {};
+          var grouping = 'wbRegion';
+
+          var countryPMap = {};
+
+          
+          countries.forEach(function(country, index) {
+            
+            
+            if (!country[grouping]) {
+              return;
+            }
+            
+            if (!(country[grouping] in groups)) {
+              var id = Object.keys(groups).length;
+              groups[country[grouping]] = {
+                id: 'id_' + id,
+                name: country[grouping],
+                genderPoints: 0,
+                value: 0
+              };
+            }
+
+            var group = groups[country[grouping]];
+            
+            var countryP = {
+                id: group.id + '_' + index,
+                name: country.name + ' ' + country.value,
+                parent: group.id,
+                value: Math.abs(country.value),
+                colorValue: country.value
+            };
+
+            countryPMap[countryP.name] = country;
+
+            if (!isNaN(country.value)) {
+              group.value += country.value;
+              group.genderPoints += 1;
+            }
+
+            points.push(countryP);
+          });
+
+          
+          
+          var groupPs = Object.keys(groups).map(function(r) {
+            var group = groups[r];
+            var groupValue = group.value / (group.genderPoints);
+            
+            groupValue = Number(groupValue.toFixed(1));
+            var groupName = group.name + ' ' + groupValue;
+
+            return Object.assign({}, groups[r], {
+              name: groupName,
+              colorValue: groupValue,
+              value: Math.abs(groupValue)
+            });
+          });
+          points.push.apply(points, groupPs);
+
+          $('#bmi-wb-region').highcharts({
+              tooltip: {
+                enabled: true,
+                formatter: function() {
+                  var country = countryPMap[this.key];
+                  if (country) {
+                    var male = country.data['2014']['Male'];
+                    var female = country.data['2014']['Female'];
+                    return '' +
+                    '<div>' +
+                      '<p>' + this.key.substring(0, this.key.lastIndexOf(' ')) + '</p>' +
+                      '<br>' +
+                      '<p>Male: ' + male + '</p>' +
+                      '<br>' +
+                      '<p>Female: ' + female + '</p>' +
+                    '</div>';
+                  }
+                  return this.key;
+                }
+              },
+              colorAxis: {
+                  description: 'BMI Classifications',
+                  tickPositions: [-5, 0, 5],
+                  stops: [
+                      [0, '#ff0000'],
+                      [0.5, '#ffffff'],
+                      [1, '#0000ff']
+                  ]
+              },
+              series: [{
+                  type: 'treemap',
+                  layoutAlgorithm: 'squarified',
+                  allowDrillToNode: true,
+                  animationLimit: 1000,
+                  dataLabels: {
+                      enabled: false
+                  },
+                  levelIsConstant: false,
+                  levels: [
+                    {
+                      level: 1,
+                      dataLabels: {
+                          enabled: true
+                      },
+                      borderWidth: 3
+                    }
+                  ],
+                  data: points
+              }],
+              subtitle: {
+                  text: 'Click to drill down. <br> Source: ' +
+                  '<a href="http://apps.who.int/gho/data/view.main.12461?lang=en">WHO</a>' +
+                  ' and <a href="http://databank.worldbank.org/data/download/site-content/OGHIST.xls">World Bank</a>.'
+              },
+              title: {
+                  text: 'Mean BMI Difference By World Bank Region'
+              }
+          });
+        });
+    })
+</script>
+
+
+<p>Immediately there is a clear visual divide between European countries and the rest of the
+world. Coming from the United States, my initial explanation for the matter was
+due to beauty standards.</p>
+
+<blockquote>
+<p>there is a clear visual divide between The West and the rest of the world</p>
+</blockquote>
+
+<p>I was no stranger to the beauty standard that thin is beautiful. And amongst one
+Huffington Post writer, it was unsurprising to also find that trait be considered
+beautiful in Europe.</p>
+
+<blockquote>
+<p><a href="http://www.huffingtonpost.com/antonia-opiah/how-women-in-europe-define-beauty_b_8206644.html">I was unsurprised to find that in these three different cities the tall, thin, blonde archetype was the dominant ideal</a></p>
+</blockquote>
+
+<p>In regards to this, we can see that Swiss women not only fight the odds greatest,
+within their own country, but also throughout the rest of Europe for being the
+thinnest. Nevertheless, European countries have thinner women and it may be because
+of beauty standards.</p>
+
+<p>Looking at the rest of the world&hellip;</p>
+
+<h2 id="the-red-world">The red world</h2>
+
+<p>The thing more prominent that the divide was how enunciated the difference was in
+some countries. If beauty standards was to be the reason for the gender difference
+in Europe, it&rsquo;d be best to remain consistent and see if it was also beauty standards
+that explained women being heavier than men in the rest of the world.</p>
+
+<h2 id="a-look-at-the-red-sub-saharan-africa-western-africa">A look at the red: Sub-Saharan Africa, Western Africa</h2>
+
+<p>Looking up information about beauty in countries located in this area gave results
+on beauty standards in Western Africa. I found an article by the IB Times which
+spoke about how in Ghana and West Africa in general, women desire to be larger.</p>
+
+<blockquote>
+<p><a href="http://www.ibtimes.com/fat-land-western-standards-beauty-clash-west-african-notions-843573">Indeed, like the rest of West Africa, Ghanaian women aspire to voluptuousness, even purchasing “appetite stimulants” in order to develop large busts, big behinds and thick legs</a></p>
+</blockquote>
+
+<p>I also got to learn the extreme lengths which this was carried out in one of the
+West African country of Mauritania. As it was in the IB Times article, I saw
+information that reinforced the beauty standard that larger was beautiful.</p>
+
+<blockquote>
+<p><a href="http://www.marieclaire.com/politics/news/a3513/forcefeeding-in-mauritania/">Mauritanian tradition holds that among women, rolling layers of fat are the height of sexiness</a></p>
+</blockquote>
+
+<p>Unfortunately, I discovered that this standard is taken to an extreme in some cases
+through the form of &ldquo;fat camps&rdquo; where girls are forced into the practice of
+gavage, eating up to 16,000 calories a day. My brother who is a body builder
+often complains and struggles to eat the 4,000 calories a day necessary so it
+astounded me how this was possible. An interview with one of the &ldquo;feeders&rdquo;
+quickly cleared it up.</p>
+
+<blockquote>
+<p><a href="http://www.marieclaire.com/politics/news/a3513/forcefeeding-in-mauritania/">How do small girls eat these gargantuan amounts of food? &ldquo;I&rsquo;m very strict,&rdquo;
+boasts Elhacen. &ldquo;I beat the girls, or torture them by squeezing a stick between
+their toes. I isolate them and tell them that thin women are inferior.</a></p>
+</blockquote>
+
+<h2 id="a-look-at-the-red-middle-east-north-africa">A look at the red: Middle East &amp; North Africa</h2>
+
+<p>I found a study speculating the increase in weight in this particular regin. In
+particular</p>
+
+<blockquote>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175401/">The influence of men in determining women&rsquo;s attitudes towards body size is
+another important issue in some countries in the region. In Qatar, for example,
+about 43% of Arab women studied believed that men preferred plump women.
+Similar findings were reported in Morocco, as there is a cultural preference of
+body fatness among women of the Sahraoui ethnic group.</a></p>
+</blockquote>
+
+<p>Heavy speculation. Also resorted to drugs</p>
+
+<blockquote>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175401/">About 70% of South Morocco women had made a previous attempt to gain weight.
+Appetite stimulant, overeating, and corticosteroids were the main methods used
+to fatting. In addition, some women used traditional suppositories called Ligue,
+composed of dates mixed with seeds and medicinal part, specifically for increasing
+their peripheral fat [122]. It is believed that the preference for plumpness women
+in some regions in the EMR countries is due to sexual attraction, rather than
+any other factors. However, such conclusion needs to be studied.</a></p>
+</blockquote>
+
+<h2 id="a-look-at-the-red-carribean">A look at the red: Carribean</h2>
+
+<p>Unable to find Dominica and Grenada specifically but was able to find Jamaica. Given
+relative GDP and physical proximity very possible that the two former share similar
+values with Jamaica. Also preferred heavier and also had resorted to taking drugs.</p>
+
+<blockquote>
+<p><a href="http://www.npr.org/templates/story/story.php?storyId=124700865">&ldquo;Women take the chicken pills to get broader hips and bigger bottoms,&rdquo; says
+Carol&rsquo;s son Jason. &ldquo;In our Jamaican culture, we love a girl that has a lot of shape.&rdquo;</a></p>
+</blockquote>
+
+<h2 id="a-look-at-the-red-pacific">A look at the red: Pacific</h2>
+
+<p>Unable to find comprehensive but saw some statements from PM remarking his
+attitude and perceived attitudes of others in the region.</p>
+
+<blockquote>
+<p><a href="http://www.stuff.co.nz/life-style/beauty/9245664/Samoan-PM-says-big-is-beautiful">&ldquo;In Samoa, when a girl with big legs, big thighs and big everything walks by,
+the old women will say, oh, what a beautiful girl&hellip;Us in the Samoa and the
+Pacific Islands, it&rsquo;s certainly the big healthy voluptuous girl”</a></p>
+</blockquote>
+
+<h2 id="america-is-the-most-equal">America is the most equal</h2>
+
+<p>Can&rsquo;t talk about inequality without equality. This was calculated by taking
+the absolute value of the gender difference and subtracting it from a maximum.
+The lower the difference, the greater the value. The color scale uses a white to
+black gradient where the darker it is, the less the difference / greater the BMI
+equality.</p>
+
+<p>Looking at this America is the country with the greatest equality with there being
+no difference between the mean BMI between men and women. However this is maybe not
+too great as they both have a value of 28.8 which means the average American is
+only about a point or so away from being considered obese.</p>
+
+<blockquote>
+<p>America is the country with the greatest equality with there being
+no difference between the mean BMI between men and women. However this is maybe not
+too great as they both have a value of 28.8 which means the average American is
+only about a point or so away from being considered obese.</p>
+</blockquote>
+
+<p>    
+
+<figure id="bmi-wb-income-eq" class="highcharts"></figure>
+
+<script type="text/javascript">
+    $(function() {
+        function formatData(data, metadata) {
+          var countryLabels = data.geographies[0].features;
+
+          
+          var countries = countryLabels.map(function(c) {
+            var countryMetaInfo = metadata[c.id];
+            if (!countryMetaInfo) {
+              countryMetaInfo = {};
+            }
+            if (countryMetaInfo.region === 'Not classified') {
+              countryMetaInfo.region = undefined;
+            }
+            if (countryMetaInfo.income === 'Not classified') {
+              countryMetaInfo.income = undefined;
+            }
+            return {
+              id: c.id,
+              name: c.name,
+              whoRegion: c.filters[0].name,
+              wbRegion: countryMetaInfo.region,
+              income: countryMetaInfo.income,
+              data: {}
+            };
+          });
+
+          
+          var countryData = data.geographies[0].themes[0].indicators;
+          countries.forEach(function(c, index) {
+            var mergedDataSet = c.data;
+            countryData.forEach(function(dataSet) {
+              var date = dataSet.date;
+              var gender = dataSet.name;
+
+              mergedDataSet[date] = mergedDataSet[date] || {};
+              mergedDataSet[date][gender] = dataSet.values[index];
+            });
+          });
+
+          
+          countries = countries.map(function(c) {
+            var genderDiff = c.data['2014']['Male'] - c.data['2014']['Female'];
+            
+            var value = 5 - Math.abs(genderDiff);
+            value = Number(value.toFixed(1));
+            return Object.assign({}, c, {
+              value: value
+            });
+          })
+
+          return countries;
+        }
+
+        var promises = [
+            $.getJSON('\/charts\/worldbank2014m.json'),
+            $.getJSON('\/charts\/bmi.json')
+        ];
+
+        Promise.all(promises).then(function(dataSets) {
+          var metadata = dataSets[0];
+          var data = dataSets[1];
+
+          data.credits = {
+              text: 'Source',
+              href: '\/charts\/bmi.json'
+          }
+
+          var countries = formatData(data, metadata);
+
+          var points = [];
+          var groups = {};
+          var grouping = 'income';
+
+          var countryPMap = {};
+
+          
+          countries.forEach(function(country, index) {
+            
+            
+            if (!country[grouping]) {
+              return;
+            }
+
+            
+            if (!(country[grouping] in groups)) {
+              var id = Object.keys(groups).length;
+              groups[country[grouping]] = {
+                id: 'id_' + id,
+                name: country[grouping],
+                genderPoints: 0,
+                value: 0
+              };
+            }
+
+            var group = groups[country[grouping]];
+            
+            var countryP = {
+                id: group.id + '_' + index,
+                name: country.name + ' ' + country.value,
+                parent: group.id,
+                value: country.value,
+                colorValue: country.value
+            };
+
+            countryPMap[countryP.name] = country;
+
+            if (!isNaN(country.value)) {
+              group.value += country.value;
+              group.genderPoints += 1;
+            }
+
+            points.push(countryP);
+          });
+
+          
+          
+          var groupPs = Object.keys(groups).map(function(r) {
+            var group = groups[r];
+            var groupValue = group.value / (group.genderPoints);
+            
+            groupValue = Number(groupValue.toFixed(1));
+            var groupName = group.name + ' ' + groupValue;
+
+            return Object.assign({}, groups[r], {
+              name: groupName,
+              colorValue: groupValue,
+              value: groupValue
+            });
+          });
+          points.push.apply(points, groupPs);
+
+          $('#bmi-wb-income-eq').highcharts({
+              tooltip: {
+                enabled: true,
+                formatter: function() {
+                  var country = countryPMap[this.key];
+                  if (country) {
+                    var male = country.data['2014']['Male'];
+                    var female = country.data['2014']['Female'];
+                    return '' +
+                    '<div>' +
+                      '<p>' + this.key.substring(0, this.key.lastIndexOf(' ')) + '</p>' +
+                      '<br>' +
+                      '<p>Male: ' + male + '</p>' +
+                      '<br>' +
+                      '<p>Female: ' + female + '</p>' +
+                    '</div>';
+                  }
+                  return this.key;
+                }
+              },
+              colorAxis: {
+                  description: 'BMI Classifications',
+                  tickPositions: [0, 5],
+                  stops: [
+                      [0, '#ffffff'],
+                      [1, '#000000']
+                  ]
+              },
+              series: [{
+                  type: 'treemap',
+                  layoutAlgorithm: 'squarified',
+                  allowDrillToNode: true,
+                  animationLimit: 1000,
+                  dataLabels: {
+                      enabled: false
+                  },
+                  levelIsConstant: false,
+                  levels: [
+                    {
+                      level: 1,
+                      dataLabels: {
+                          enabled: true
+                      },
+                      borderWidth: 3
+                    }
+                  ],
+                  data: points
+              }],
+              subtitle: {
+                  text: 'Click to drill down. <br> Source: ' +
+                  '<a href="http://apps.who.int/gho/data/view.main.12461?lang=en">WHO</a>' +
+                  ' and <a href="http://databank.worldbank.org/data/download/site-content/OGHIST.xls">World Bank</a>.'
+              },
+              title: {
+                  text: 'Mean BMI Equality By World Bank Income Group'
+              }
+          });
+        });
+    })
+</script>
+</p>
+
+<p>However looking at this it looks as if there is inequality towards one gender or the
+other regardless of income. I took a look at the percentiles within these different
+groups and they all did not seem too skewed one way or the other. Except that that
+low income countries may be more particularly equal in BMI at higher end.</p>
+
+<pre><code>Classification         25%   50%   75%
+======================================
+Low income             3.3   3.8   4.6
+Lower middle income    3.2   3.8   4.3
+Upper middle income    3.4   3.8   4.2
+High income            3.3   3.7   4.3
+</code></pre>
+
+<h2 id="conclusions-and-caveats">Conclusions and caveats</h2>
+
+<p>Although beauty standards may explain factors in some of this, it is not Absolute
+not universal. In the case of BMI difference in European country, it is possible
+that many of the countries are within a defensible margin since it&rsquo;s arguable
+the BMI should be <a href="http://halls.md/bmi-difference-men-women/">adjusted up by 2 points for men</a>.</p>
+
+<p>I don&rsquo;t deny that there is a beauty standard but as far as just looking at the
+numbers there needs to be some room for skepticism at using these numbers as a form
+of implication.</p>
+
+<p>In addition, it may not be all beauty standards and some of it may just be due to
+<a href="http://www.iol.co.za/lifestyle/big-is-beautiful-say-fat-south-africans-1412306">&ldquo;eating more like the Western World&rdquo;</a>
+As seen in the previous post, there seems to be a transitional area economically
+where once a country hits lower middle income, they have possibility to become
+overweight or obese, possibly due to this.</p>
+
+<p>Nevertheless although there is no universality and beauty standards and body weight
+and health is a complex matter, looking purely at these numbers allowed me to
+discover beauty standards, culture, and practices I did not know of before. This
+was both bad and good as although I got to learn about a greater range of what may
+be deemed beautiful, I also learned about not so pleasant practices such as the
+fat camps the girls in Mauritania were forced to go to to be force fed or women
+in a variety of other countries taking medication to induce gain.</p>
+
+<blockquote>
+<p>looking purely at these numbers allowed me to
+discover beauty standards, culture, and practices I did not know of before. This
+was both bad and good as although I got to learn about a greater range of what may
+be deemed beautiful, I also learned about not so pleasant practices such as the
+fat camps the girls in Mauritania were forced to go to to be force fed or women
+in a variety of other countries taking medication to induce gain.</p>
+</blockquote>
+
+<!--     
+
+<figure id="bmi-wb-income" class="highcharts"></figure>
+
+<script type="text/javascript">
+    $(function() {
+        function formatData(data, metadata) {
+          var countryLabels = data.geographies[0].features;
+
+          
+          var countries = countryLabels.map(function(c) {
+            var countryMetaInfo = metadata[c.id];
+            if (!countryMetaInfo) {
+              countryMetaInfo = {};
+            }
+            if (countryMetaInfo.region === 'Not classified') {
+              countryMetaInfo.region = undefined;
+            }
+            if (countryMetaInfo.income === 'Not classified') {
+              countryMetaInfo.income = undefined;
+            }
+            return {
+              id: c.id,
+              name: c.name,
+              whoRegion: c.filters[0].name,
+              wbRegion: countryMetaInfo.region,
+              income: countryMetaInfo.income,
+              data: {}
+            };
+          });
+
+          
+          var countryData = data.geographies[0].themes[0].indicators;
+          countries.forEach(function(c, index) {
+            var mergedDataSet = c.data;
+            countryData.forEach(function(dataSet) {
+              var date = dataSet.date;
+              var gender = dataSet.name;
+
+              mergedDataSet[date] = mergedDataSet[date] || {};
+              mergedDataSet[date][gender] = dataSet.values[index];
+            });
+          });
+
+          
+          countries = countries.map(function(c) {
+            var genderDiff = c.data['2014']['Male'] - c.data['2014']['Female'];
+            genderDiff = Number(genderDiff.toFixed(1));
+            return Object.assign({}, c, {
+              value: genderDiff
+            });
+          })
+
+          return countries;
+        }
+
+        var promises = [
+            $.getJSON('\/charts\/worldbank2014m.json'),
+            $.getJSON('\/charts\/bmi.json')
+        ];
+
+        Promise.all(promises).then(function(dataSets) {
+          var metadata = dataSets[0];
+          var data = dataSets[1];
+
+          data.credits = {
+              text: 'Source',
+              href: '\/charts\/bmi.json'
+          }
+
+          var countries = formatData(data, metadata);
+
+          var points = [];
+          var groups = {};
+          var grouping = 'income';
+
+          var countryPMap = {};
+
+          
+          countries.forEach(function(country, index) {
+            
+            
+            if (!country[grouping]) {
+              return;
+            }
+            
+            if (!(country[grouping] in groups)) {
+              var id = Object.keys(groups).length;
+              groups[country[grouping]] = {
+                id: 'id_' + id,
+                name: country[grouping],
+                genderPoints: 0,
+                value: 0
+              };
+            }
+
+            var group = groups[country[grouping]];
+            
+            var countryP = {
+                id: group.id + '_' + index,
+                name: country.name + ' ' + country.value,
+                parent: group.id,
+                value: Math.abs(country.value),
+                colorValue: country.value
+            };
+
+            countryPMap[countryP.name] = country;
+
+            if (!isNaN(country.value)) {
+              group.value += country.value;
+              group.genderPoints += 1;
+            }
+
+            points.push(countryP);
+          });
+
+          
+          
+          var groupPs = Object.keys(groups).map(function(r) {
+            var group = groups[r];
+            var groupValue = group.value / (group.genderPoints);
+            
+            groupValue = Number(groupValue.toFixed(1));
+            var groupName = group.name + ' ' + groupValue;
+
+            return Object.assign({}, groups[r], {
+              name: groupName,
+              colorValue: groupValue,
+              value: Math.abs(groupValue)
+            });
+          });
+          points.push.apply(points, groupPs);
+
+          $('#bmi-wb-income').highcharts({
+              tooltip: {
+                enabled: true,
+                formatter: function() {
+                  var country = countryPMap[this.key];
+                  if (country) {
+                    var male = country.data['2014']['Male'];
+                    var female = country.data['2014']['Female'];
+                    return '' +
+                    '<div>' +
+                      '<p>' + this.key.substring(0, this.key.lastIndexOf(' ')) + '</p>' +
+                      '<br>' +
+                      '<p>Male: ' + male + '</p>' +
+                      '<br>' +
+                      '<p>Female: ' + female + '</p>' +
+                    '</div>';
+                  }
+                  return this.key;
+                }
+              },
+              colorAxis: {
+                  description: 'BMI Classifications',
+                  tickPositions: [-5, 0, 5],
+                  stops: [
+                      [0, '#ff0000'],
+                      [0.5, '#ffffff'],
+                      [1, '#0000ff']
+                  ]
+              },
+              series: [{
+                  type: 'treemap',
+                  layoutAlgorithm: 'squarified',
+                  allowDrillToNode: true,
+                  animationLimit: 1000,
+                  dataLabels: {
+                      enabled: false
+                  },
+                  levelIsConstant: false,
+                  levels: [
+                    {
+                      level: 1,
+                      dataLabels: {
+                          enabled: true
+                      },
+                      borderWidth: 3
+                    }
+                  ],
+                  data: points
+              }],
+              subtitle: {
+                  text: 'Click to drill down. <br> Source: ' +
+                  '<a href="http://apps.who.int/gho/data/view.main.12461?lang=en">WHO</a>' +
+                  ' and <a href="http://databank.worldbank.org/data/download/site-content/OGHIST.xls">World Bank</a>.'
+              },
+              title: {
+                  text: 'Mean BMI Difference By World Bank Income Group'
+              }
+          });
+        });
+    })
+</script>
+ -->
+
+            </article>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'rheakara';
+    var disqus_identifier = 'https:\/\/www.rheakara.com\/blog\/world-bmi-pt2\/';
+    var disqus_title = 'BMI Around the World Pt.2';
+    var disqus_url = 'https:\/\/www.rheakara.com\/blog\/world-bmi-pt2\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+
+        <footer class="footer">
+    <div class="row pull-right">
+        <a href="mailto:hello@rheakara.com">
+            <h6>hello@rheakara.com</h6>
+        </a>
+    </div>
+</footer>
+
+
+    </div>
+</body>
+
+</html>
