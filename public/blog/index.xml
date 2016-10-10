@@ -194,7 +194,6 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
                 colorValue: country.data[&#39;2014&#39;][&#39;Both sexes&#39;]
             };
 
-            console.log(countryP.name);
             countryPMap[countryP.name] = country;
 
             points.push(countryP);
@@ -244,9 +243,7 @@ WHO&amp;rsquo;s &lt;em&gt;South-East Asia&lt;/em&gt; region include &lt;em&gt;Ma
               tooltip: {
                 enabled: true,
                 formatter: function() {
-                  console.log(this.key);
                   var country = countryPMap[this.key];
-                  console.log(country);
                   if (country) {
                     return country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;];
                   }
@@ -463,7 +460,6 @@ its average BMI.&lt;/p&gt;
                 colorValue: country.data[&#39;2014&#39;][&#39;Both sexes&#39;]
             };
 
-            console.log(countryP.name);
             countryPMap[countryP.name] = country;
 
             points.push(countryP);
@@ -513,9 +509,7 @@ its average BMI.&lt;/p&gt;
               tooltip: {
                 enabled: true,
                 formatter: function() {
-                  console.log(this.key);
                   var country = countryPMap[this.key];
-                  console.log(country);
                   if (country) {
                     return country.name + &#39; &#39; + country.data[&#39;2014&#39;][&#39;Both sexes&#39;];
                   }
