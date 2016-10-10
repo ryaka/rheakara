@@ -5,6 +5,7 @@ title = "Hello World"
 description = "A post on how this blog came to be."
 tags = []
 categories = ["general", "technology"]
+disqus = true
 +++
 
 For some background, I was previously using Squarespace to host an equivalent

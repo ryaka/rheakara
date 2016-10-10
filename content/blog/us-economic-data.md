@@ -6,6 +6,7 @@ hero = "/img/dollars.png"
 tags = []
 title = "US Economic Data"
 draft = true
+disqus = true
 +++
 
 In the making but here's a chart for some things to be discussed:

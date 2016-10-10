@@ -6,6 +6,7 @@ tags = []
 title = "BMI Around the World Pt.2"
 description = "A look at gender differences or: One way to discover cultural beauty standards"
 draft = true
+disqus = true
 +++
 
 [Part 1](/blog/world-bmi-pt1)

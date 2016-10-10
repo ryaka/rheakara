@@ -5,6 +5,7 @@ hero = "/img/food.jpg"
 tags = []
 title = "BMI Around the World Pt.1"
 description = "Taking a look through different lenses"
+disqus = true
 +++
 
 Like many in the United States, I often heard the adage of the "starving kids in China".
