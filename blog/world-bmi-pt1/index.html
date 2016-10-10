@@ -263,7 +263,6 @@ WHO&rsquo;s <em>South-East Asia</em> region include <em>Maldives, Bhutan, Sri La
                 colorValue: country.data['2014']['Both sexes']
             };
 
-            console.log(countryP.name);
             countryPMap[countryP.name] = country;
 
             points.push(countryP);
@@ -313,9 +312,7 @@ WHO&rsquo;s <em>South-East Asia</em> region include <em>Maldives, Bhutan, Sri La
               tooltip: {
                 enabled: true,
                 formatter: function() {
-                  console.log(this.key);
                   var country = countryPMap[this.key];
-                  console.log(country);
                   if (country) {
                     return country.name + ' ' + country.data['2014']['Both sexes'];
                   }
@@ -532,7 +529,6 @@ its average BMI.</p>
                 colorValue: country.data['2014']['Both sexes']
             };
 
-            console.log(countryP.name);
             countryPMap[countryP.name] = country;
 
             points.push(countryP);
@@ -582,9 +578,7 @@ its average BMI.</p>
               tooltip: {
                 enabled: true,
                 formatter: function() {
-                  console.log(this.key);
                   var country = countryPMap[this.key];
-                  console.log(country);
                   if (country) {
                     return country.name + ' ' + country.data['2014']['Both sexes'];
                   }
