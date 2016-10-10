@@ -236,6 +236,13 @@ WHO&rsquo;s <em>South-East Asia</em> region include <em>Maldives, Bhutan, Sri La
           var countryPMap = {};
 
           
+          
+          
+          countries = countries.sort(function(a, b) {
+            return a.data['2014']['Both sexes'] - b.data['2014']['Both sexes'];
+          });
+
+          
           countries.forEach(function(country, index) {
             
             
@@ -490,6 +497,13 @@ its average BMI.</p>
           var grouping = 'income';
 
           var countryPMap = {};
+
+          
+          
+          
+          countries = countries.sort(function(a, b) {
+            return a.data['2014']['Both sexes'] - b.data['2014']['Both sexes'];
+          });
 
           
           countries.forEach(function(country, index) {
