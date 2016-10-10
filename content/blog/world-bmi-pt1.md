@@ -60,7 +60,7 @@ WHO's *South-East Asia* region include *Maldives, Bhutan, Sri Lanka, Nepal, Indi
 
 Using the World Bank's regional grouping:
 
-{{<highchartsTreeBMI src="/charts/bmi.json" metasrc="/charts/worldbank2014m.json" id="bmi-wb-region" grouping="wbRegion" title="Mean BMI By World Bank Region">}}
+{{<highchartsTreeBMI src="/charts/bmi.json" metasrc="/charts/worldbank2014m.json" id="bmi-wb-region" grouping="wbRegion" title="Mean BMI Grouped By Region">}}
 
 Looking at this, we can generally see that outside of the Sub-Saharan Africa,
 South Asia, and East Asian & Pacific, regions, the countries of the world all
@@ -100,7 +100,7 @@ Lower middle income  |  $1,046-$4,125
 Upper middle income  |  $4,126-$12,735
 Upper income         |  > $12,735
 
-{{<highchartsTreeBMI src="/charts/bmi.json" metasrc="/charts/worldbank2014m.json" id="bmi-wb-income" grouping="income" title="Mean BMI By World Bank Income Group">}}
+{{<highchartsTreeBMI src="/charts/bmi.json" metasrc="/charts/worldbank2014m.json" id="bmi-wb-income" grouping="income" title="Mean BMI Grouped By Income">}}
 
 Through grouping countries by their income, we see a clear correlation between a
 country's income and its average BMI.
