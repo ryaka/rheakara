@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rhea Kara</title>
+    <link>https://www.rheakara.com/categories/charts/index.xml</link>
+    <description>Recent content on Rhea Kara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Your Copyright</copyright>
+    <atom:link href="https://www.rheakara.com/categories/charts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>US Economic Data</title>
+      <link>https://www.rheakara.com/blog/us-economic-data/</link>
+      <pubDate>Sat, 17 Sep 2016 18:47:48 -0700</pubDate>
+      
+      <guid>https://www.rheakara.com/blog/us-economic-data/</guid>
+      <description>&lt;p&gt;This post may be returned to for analysis and discussion but otherwise it is
+being published for use as a reference:&lt;/p&gt;
+
+ 
+
+&lt;figure id=&#34;us-economic-data&#34; class=&#34;highcharts&#34;&gt;&lt;/figure&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+    $(function() {
+        $.getJSON(&#39;\/charts\/useconomic.json&#39;, function(data) {
+            data.credits = {
+                text: &#39;Source&#39;,
+                href: &#39;\/charts\/useconomic.json&#39;
+            }          
+            $(&#39;#us-economic-data&#39;).highcharts(data);
+        });
+    })
+&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Technology on Rhea Kara</title>
-    <link>https://www.rheakara.com/categories/technology/</link>
-    <description>Recent content in Technology on Rhea Kara</description>
+    <title>Rhea Kara</title>
+    <link>https://www.rheakara.com/categories/technology/index.xml</link>
+    <description>Recent content on Rhea Kara</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Your Copyright</copyright>
-    <lastBuildDate>Thu, 15 Sep 2016 17:05:15 -0700</lastBuildDate>
     <atom:link href="https://www.rheakara.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

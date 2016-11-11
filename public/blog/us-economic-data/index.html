@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>General - Welcome to my page</title>
+    <title>US Economic Data - Welcome to my page</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> <meta name="generator" content="Hugo 0.17-DEV" />
 
@@ -36,7 +36,7 @@ ga('send', 'pageview');
 </head>
 
 <body>
-    <div class="container-fluid" id="wrapper">
+    <div class="container-fluid">
         <header><nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -73,46 +73,61 @@ ga('send', 'pageview');
 
 
         
-         
-            <div class="hero-container" style="background-image: url();">
-                
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    
-                </div>
+        <div class="hero-container" style="background-image: url(/img/pundit.jpg);">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1> US Economic Data </h1>
+                <h4> A side by side collection of charts </h4>
             </div>
+        </div>
+        
+
+        <div class="content-container col-xs-12 col-sm-10 col-md-9 col-lg-8 center-block">
+            <article class="content">
+                <p>This post may be returned to for analysis and discussion but otherwise it is
+being published for use as a reference:</p>
+
+ 
+
+<figure id="us-economic-data" class="highcharts"></figure>
+
+<script type="text/javascript">
+    $(function() {
+        $.getJSON('\/charts\/useconomic.json', function(data) {
+            data.credits = {
+                text: 'Source',
+                href: '\/charts\/useconomic.json'
+            }          
+            $('#us-economic-data').highcharts(data);
+        });
+    })
+</script>
+
+
+            </article>
+
             
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
 
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
 
-            
-            <div class="row posts">
-                 
-                <div class="clearfix visible-md visible-lg"></div>
-                 
-                <div class="clearfix visible-sm"></div>
-                
-                <article class="col-xs-12 col-sm-6 col-md-4 post">
-                    <div>
-                        
-                        <a href="https://www.rheakara.com/blog/hello-world/">
-                            <img class="post-img" src="https://www.rheakara.com/img/hello-world.jpg" />
-                        </a>
-                        
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'rheakara';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-                        
-                        <div class="post-meta">
-                            <a class="post-title" href="https://www.rheakara.com/blog/hello-world/">
-                                <h2>Hello World</h2>
-                            </a>
-                            <p class="post-description">A post on how this blog came to be.</p>
-                        </div>
-                        
-                    </div>
-                </article>
-                
-            </div>
             
         </div>
+
         <footer class="footer">
     <div class="row pull-right">
         <a href="mailto:hello@rheakara.com">
@@ -120,6 +135,7 @@ ga('send', 'pageview');
         </a>
     </div>
 </footer>
+
 
     </div>
 </body>
