@@ -110,7 +110,7 @@ in skills in the United States.
 
 ### "Only six Indian IT firms were among the top 20 recipients of the H-1B visas in fiscal 2015"
 
-| COMPANY (2015)                                          | # APPLICATIONS | MEDIAN WAGE (ADJUSTED) |
+| COMPANY (2015)                                          | APPLICATIONS   | MEDIAN WAGE (ADJUSTED) |
 |---------------------------------------------------------|----------------|------------------------|
 | 1. **INFOSYS LIMITED**                                  | 18204          | $73368                 |
 | 2. **TATA CONSULTANCY SERVICES LIMITED**                | 8025           | $69865                 |
@@ -127,7 +127,7 @@ in skills in the United States.
 | 13. GOOGLE INC.                                         | 1467           | $123838                |
 | 14. UST GLOBAL INC                                      | 1164           | $61919                 |
 | 15. **COGNIZANT TECHNOLOGY SOLUTIONS U.S. CORPORATION** | 1035           | $68023                 |
-| ....................................................... | ....           | ......                 |
+| .....                                                   | ....           | ......                 |
 | 20. AMAZON CORPORATE LLC                                | 662            | $113518                |
 
 The data matches Nasscom's claim given above. Namely these companies would be
@@ -157,7 +157,7 @@ This trend is also upheld over the entire 2010 - 2017 period.
 | 12. GOOGLE INC.                                         | 8968           | $126000                |
 | 13. **LARSEN & TOUBRO INFOTECH LIMITED**                | 7342           | $68469                 |
 | 14. **COGNIZANT TECHNOLOGY SOLUTIONS U.S. CORPORATION** | 7337           | $69722                 |
-| .....................                                   | ....           | ......                 |
+| .....                                                   | ....           | ......                 |
 | 20. UST GLOBAL INC                                      | 3852           | $63028                 |
 
 ### Top Indian IT firm applications peaked in 2015
