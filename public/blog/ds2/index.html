@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Notes - Deep Speech 2: End-to-End Speech Recognition in English and Mandarin - Welcome to my page</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> <meta name="generator" content="Hugo 0.17-DEV" />
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link href="https://www.rheakara.com/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://www.rheakara.com/css/custom.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ramabhadra" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://www.rheakara.com/js/bootstrap.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="https://code.highcharts.com/modules/treemap.js"></script>
+
+<script src="https://code.highcharts.com/maps/modules/map.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+ 
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-84231237-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header><nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand hidden-xs" href="https://www.rheakara.com">Home</a>
+            <div class="navbar-buttons">
+                <button type="button" class="navbar-toggle btn-template-main navbar-left collapsed" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="visible-xs">
+                    <a class="nav-link navbar-right" href="https://www.rheakara.com">Home</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link navbar-right" href="https://www.rheakara.com/blog/">blog</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link navbar-right" href="https://www.rheakara.com/about/">about</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+
+        
+        <div class="hero-container" style="background-image: url(/img/16-9.png);">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1> Notes - Deep Speech 2: End-to-End Speech Recognition in English and Mandarin </h1>
+                <h4>  </h4>
+            </div>
+        </div>
+        
+
+        <div class="content-container col-xs-12 col-sm-10 col-md-9 col-lg-8 center-block">
+            <article class="content">
+                <ul>
+<li>&ldquo;We decided to examine GRUs
+because experiments on smaller data sets showed the GRU and LSTM reach similar accuracy for
+the same number of parameters, but the GRUs were faster to train and less likely to diverge&rdquo;</li>
+<li>&ldquo;the performance improvement from sequence-wise (batch) normalization increases with the depth of the network, with a 12% performance difference for the deepest network&rdquo;</li>
+<li>&rdquo; This is clear evidence of the long term
+dependencies inherent in the speech recognition task present both within individual words and between words&rdquo;</li>
+<li>&ldquo;The GRU networks outperform the simple RNNs in Table 3. However, in later results (Section 6) we
+find that as we scale up the model size, for a fixed computational budget the simple RNN networks
+perform slightly better. Given this, most of the remaining experiments use the simple RNN layers
+rather than the GRUs.&rdquo; !!!!</li>
+<li>&ldquo;striding can reduce accuracy simply because the output of our network requires at least one timestep
+per output character, and the number of characters in English speech per time-step is high
+enough to cause problems when striding2
+. To overcome this, we can enrich the English alphabet
+with symbols representing alternate labellings like whole words, syllables or non-overlapping ngrams&rdquo;</li>
+</ul>
+
+<p>However in when trying to use in online, low latency manner, must be able to operate on sample without requiring entire utterance&hellip;successful getting around this unidirectionally with usage of &ldquo; a special layer that we call row convolution&rdquo;</p>
+
+<ul>
+<li>&ldquo;We have found that deploying our models using half-precision (16-bit) floating-point arithmetic does
+not measurably change recognition accuracy. Because deployment does not require any updates to
+the network weights, it is far less sensitive to numerical precision than training&rdquo;</li>
+</ul>
+
+            </article>
+
+            
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'rheakara';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            
+        </div>
+
+        <footer class="footer">
+    <div class="row pull-right">
+        <a href="mailto:hello@rheakara.com">
+            <h6>hello@rheakara.com</h6>
+        </a>
+    </div>
+</footer>
+
+
+    </div>
+</body>
+
+</html>

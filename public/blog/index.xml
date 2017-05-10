@@ -6,8 +6,559 @@
     <description>Recent content in Blog-rss on Rhea Kara</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Your Copyright</copyright>
-    <lastBuildDate>Mon, 03 Oct 2016 14:44:46 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 05 May 2017 13:47:49 -0700</lastBuildDate>
     <atom:link href="https://www.rheakara.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Checking H-1B Claims</title>
+      <link>https://www.rheakara.com/blog/h1b/</link>
+      <pubDate>Fri, 05 May 2017 13:47:49 -0700</pubDate>
+      
+      <guid>https://www.rheakara.com/blog/h1b/</guid>
+      <description>
+
+&lt;h1 id=&#34;checking-h-1b-claims&#34;&gt;Checking H-1B Claims&lt;/h1&gt;
+
+&lt;p&gt;The H-1B visa program has recently become a hot button topic. President Trump&amp;rsquo;s
+administration have made allegations that the program has been abused to replace
+American workers with cheap labor. One claim the administration specifically
+made is that &amp;ldquo;that about 80 percent of H1B workers are paid less than the median
+wage in their fields&amp;rdquo;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The result of that is that workers are often brought in well below market rates
+to replace American workers &lt;a href=&#34;https://www.whitehouse.gov/the-press-office/2017/04/17/background-briefing-buy-american-hire-american-executive-order&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nasscom, an Indian IT lobby, responded to accusations by stating that the workers
+exported are highly skilled and that it is to meet a shortage in skills in the
+United States.&lt;/p&gt;
+
+&lt;p&gt;Given that the issue is a hot political topic with contradicting assertions on
+both sides, I wanted to take a look at the available data and try to make some
+conclusions for myself.&lt;/p&gt;
+
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+
+&lt;p&gt;The data used for this comes from the US Department of Labor&amp;rsquo;s disclosure on
+the LCA program &lt;a href=&#34;https://www.foreignlaborcert.doleta.gov/performancedata.cfm&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The LCA is a document employers are required to fill out and get approved before
+they can file for an H-1B visa. The purpose is to protect workers from being
+taken advantage of and to protect American wages.&lt;/p&gt;
+
+&lt;p&gt;Because the US DOL does not publish the H-1B data directly, the LCA&amp;rsquo;s are used as
+a proxy to determine applications for the H-1B visas. The method rests on the
+assumption that employers filing an LCA will likely proceed to file for an H-1B visa.&lt;/p&gt;
+
+&lt;p&gt;In addition, only LCA applications submitted in February and March are used. This
+is because H-1B applications have historically opened in early April. These two
+months are close enough to it that I believe there is a high correlation of the
+LCA applications submitted in this time period being submitted to H-1B. Some
+back of the envelope calculations also seem to give decent numbers. At the very least
+the general trends and compositions should be the same.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/h1b_month_2016.png&#34; alt=&#34;Submissions spike in February and March&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Submissions spike in February and March
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;As a quick aside, I initially planned to use data graciously published by a user
+off Kaggle &lt;a href=&#34;https://www.kaggle.com/nsharan/h-1b-visa&#34;&gt;here&lt;/a&gt;. Unfortunately some of the
+information I wanted were removed in their sanitizing process so I proceeded to
+cleanse the data myself. The process for that is published in this &lt;a href=&#34;google.com&#34;&gt;post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;general-trends-in-h-1b-applications&#34;&gt;General Trends in H-1B applications&lt;/h2&gt;
+
+&lt;h3 id=&#34;applications-increased-5-fold-from-2010-2017&#34;&gt;Applications increased 5 fold from 2010 - 2017&lt;/h3&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/num_position.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Between 2010 and 2017, the number of applications grew from an estimated 60,000
+applications to 300,000. The bulk of this growth started in 2012 and continued
+up to 2016.&lt;/p&gt;
+
+&lt;h3 id=&#34;there-was-little-to-no-growth-from-2016-2017&#34;&gt;There was little to no growth from 2016-2017&lt;/h3&gt;
+
+&lt;p&gt;The number of applications went from around 295,000 to 300,000, which is within
+the margin of error.&lt;/p&gt;
+
+&lt;h3 id=&#34;computer-software-related-professions-are-hot&#34;&gt;Computer / software related professions are hot&lt;/h3&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/perc_position.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The top 8 applied for positions as defined by the US government&amp;rsquo;s SOC system,
+computer and software positions make up at least 175,000 applications for 2017.
+This makes up at least 60% of all applications.&lt;/p&gt;
+
+&lt;h3 id=&#34;there-was-a-general-decrease-in-the-computer-and-mathematical-sector&#34;&gt;There was a general decrease in the computer and mathematical sector&lt;/h3&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/perc_industry.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The net number of H1B applications from this industry (using SOC classification)
+group dropped about 10,000 from the previous year. As a whole the number of applications
+dropped from around 71% of all applications to 67%.&lt;/p&gt;
+
+&lt;h2 id=&#34;trends-in-major-applicants&#34;&gt;Trends in major applicants&lt;/h2&gt;
+
+&lt;p&gt;IGATE TECHNOLOGIES INC., INTEL CORPORATION , IBM CORPORATION, AMAZON CORPORATE LLC,
+DELOITTE &amp;amp; TOUCHE LLP are respectively omitted.&lt;/p&gt;
+
+&lt;p&gt;The White House recently made &lt;a href=&#34;https://www.whitehouse.gov/the-press-office/2017/04/17/background-briefing-buy-american-hire-american-executive-order&#34;&gt;accusations&lt;/a&gt; that some companies are abusing the H-1B system by flooding the
+system with applications to get a disproportionate amount of visas. In addition
+the companies &amp;ldquo;Tata, Infosys, Cognizant&amp;rdquo; were particular named in the accusations
+as some of these abusers. Finally the workers being imported as alleged as
+&amp;ldquo;actually less skilled and lower paid than the workers that they’re replacing&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Nasscom, an Indian IT lobby, &lt;a href=&#34;http://www.business-standard.com/article/companies/tcs-infosys-got-only-8-8-of-total-h-1b-visas-nasscom-s-rebuttal-to-us-117042401271_1.html&#34;&gt;responded to accusations&lt;/a&gt; by stating that the workers
+exported are highly skilled and that the numbers merely fulfill a shortage
+in skills in the United States.&lt;/p&gt;
+
+&lt;h3 id=&#34;only-six-indian-it-firms-were-among-the-top-20-recipients-of-the-h-1b-visas-in-fiscal-2015&#34;&gt;&amp;ldquo;Only six Indian IT firms were among the top 20 recipients of the H-1B visas in fiscal 2015&amp;rdquo;&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;COMPANY (2015)&lt;/th&gt;
+&lt;th&gt;# APPLICATIONS&lt;/th&gt;
+&lt;th&gt;MEDIAN WAGE (ADJUSTED)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1. &lt;strong&gt;INFOSYS LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;18204&lt;/td&gt;
+&lt;td&gt;$73368&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2. &lt;strong&gt;TATA CONSULTANCY SERVICES LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;8025&lt;/td&gt;
+&lt;td&gt;$69865&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3. ACCENTURE LLP&lt;/td&gt;
+&lt;td&gt;5351&lt;/td&gt;
+&lt;td&gt;$76846&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4. &lt;strong&gt;IBM INDIA PRIVATE LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5169&lt;/td&gt;
+&lt;td&gt;$76006&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5. &lt;strong&gt;WIPRO LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;4471&lt;/td&gt;
+&lt;td&gt;$69033&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;6. DELOITTE CONSULTING LLP&lt;/td&gt;
+&lt;td&gt;3130&lt;/td&gt;
+&lt;td&gt;$82559&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;7. &lt;strong&gt;HCL AMERICA, INC.&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2936&lt;/td&gt;
+&lt;td&gt;$73497&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;8. IGATE TECHNOLOGIES INC.&lt;/td&gt;
+&lt;td&gt;2545&lt;/td&gt;
+&lt;td&gt;$67905&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9. &lt;strong&gt;TECH MAHINDRA (AMERICAS),INC.&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2317&lt;/td&gt;
+&lt;td&gt;$73669&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10. &lt;strong&gt;LARSEN &amp;amp; TOUBRO INFOTECH LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1714&lt;/td&gt;
+&lt;td&gt;$72018&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11. ERNST &amp;amp; YOUNG U.S. LLP&lt;/td&gt;
+&lt;td&gt;1649&lt;/td&gt;
+&lt;td&gt;$79669&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;12. MICROSOFT CORPORATION&lt;/td&gt;
+&lt;td&gt;1531&lt;/td&gt;
+&lt;td&gt;$122562&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;13. GOOGLE INC.&lt;/td&gt;
+&lt;td&gt;1467&lt;/td&gt;
+&lt;td&gt;$123838&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;14. UST GLOBAL INC&lt;/td&gt;
+&lt;td&gt;1164&lt;/td&gt;
+&lt;td&gt;$61919&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;15. &lt;strong&gt;COGNIZANT TECHNOLOGY SOLUTIONS U.S. CORPORATION&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1035&lt;/td&gt;
+&lt;td&gt;$68023&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.&lt;/td&gt;
+&lt;td&gt;&amp;hellip;.&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;20. AMAZON CORPORATE LLC&lt;/td&gt;
+&lt;td&gt;662&lt;/td&gt;
+&lt;td&gt;$113518&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The data matches Nasscom&amp;rsquo;s claim given above. Namely these companies would be
+Infosys, Tata, IBM India, Wipro, Larsen &amp;amp; Toubro, and Cognizant.&lt;/p&gt;
+
+&lt;p&gt;However, &lt;strong&gt;all of these companies are actually in the top 15&lt;/strong&gt; which increases the
+relative weight. In addition if we also include companies that are merely
+American based subsidiaries but India headquartered, this would include
+HCL America and Tech Mahindra which means that &lt;strong&gt;8 India-bodied IT firms are
+among the top 15 applicants of H-1B visas for 2015&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This trend is also upheld over the entire 2010 - 2017 period.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;COMPANY (2010-2017)&lt;/th&gt;
+&lt;th&gt;APPLICATIONS&lt;/th&gt;
+&lt;th&gt;MEDIAN WAGE (ADJUSTED)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1. &lt;strong&gt;INFOSYS LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;73770&lt;/td&gt;
+&lt;td&gt;$75094&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2. &lt;strong&gt;TATA CONSULTANCY SERVICES LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;29429&lt;/td&gt;
+&lt;td&gt;$68730&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3. ACCENTURE LLP&lt;/td&gt;
+&lt;td&gt;19478&lt;/td&gt;
+&lt;td&gt;$76287&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4. &lt;strong&gt;WIPRO LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;18951&lt;/td&gt;
+&lt;td&gt;$70385&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5. DELOITTE CONSULTING LLP&lt;/td&gt;
+&lt;td&gt;17526&lt;/td&gt;
+&lt;td&gt;$84743&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;6. &lt;strong&gt;TECH MAHINDRA (AMERICAS),INC.&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;16167&lt;/td&gt;
+&lt;td&gt;$72890&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;7. &lt;strong&gt;IBM INDIA PRIVATE LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;15220&lt;/td&gt;
+&lt;td&gt;$76189&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;8. &lt;strong&gt;HCL AMERICA, INC.&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;11300&lt;/td&gt;
+&lt;td&gt;$73649&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9. CAPGEMINI AMERICA INC&lt;/td&gt;
+&lt;td&gt;10993&lt;/td&gt;
+&lt;td&gt;$74400&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10. MICROSOFT CORPORATION&lt;/td&gt;
+&lt;td&gt;9995&lt;/td&gt;
+&lt;td&gt;$118232&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11. ERNST &amp;amp; YOUNG U.S. LLP&lt;/td&gt;
+&lt;td&gt;9948&lt;/td&gt;
+&lt;td&gt;$80495&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;12. GOOGLE INC.&lt;/td&gt;
+&lt;td&gt;8968&lt;/td&gt;
+&lt;td&gt;$126000&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;13. &lt;strong&gt;LARSEN &amp;amp; TOUBRO INFOTECH LIMITED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;7342&lt;/td&gt;
+&lt;td&gt;$68469&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;14. &lt;strong&gt;COGNIZANT TECHNOLOGY SOLUTIONS U.S. CORPORATION&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;7337&lt;/td&gt;
+&lt;td&gt;$69722&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&amp;hellip;.&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;20. UST GLOBAL INC&lt;/td&gt;
+&lt;td&gt;3852&lt;/td&gt;
+&lt;td&gt;$63028&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;top-indian-it-firm-applications-peaked-in-2015&#34;&gt;Top Indian IT firm applications peaked in 2015&lt;/h3&gt;
+
+&lt;p&gt;The top 10 indian applicants reached a peak back in 2015 and as a net have
+decreased tremendously in past 2 years. Infosys is perhaps the most dramatic,
+dropping from a high of ~18,000 applications in 2015 to ~9,000 in 2017.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/num_indian.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;trends-in-wages&#34;&gt;Trends in wages&lt;/h2&gt;
+
+&lt;p&gt;One of the accusations put forth by the White House has been that the workers
+brought in by the supposed H-1B abusers are a form of cheap labor.&lt;/p&gt;
+
+&lt;p&gt;To check on these claims, the median wages for the top 5 positions brought over
+by each of the top 6 Indian IT firms was calculated. In order to take geography
+into account, the wages were were calculated for each city.&lt;/p&gt;
+
+&lt;p&gt;The heatmaps below show the wages and relative wages to the prevailing wage
+for the top 5 positions in the top 5 worksite cities for each company. To reduce
+variance, values are shown only if there are at least 10 such workers at each
+worksite.&lt;/p&gt;
+
+&lt;p&gt;Exemplary heatmaps are chosen below to save space. A full gallery for all the
+companies can be found &lt;a href=&#34;google.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;top-indian-it-firm-workers-are-spread-out&#34;&gt;Top Indian IT Firm Workers Are Spread Out&lt;/h3&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/num_wage_infosys.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Unlike some of the major tech names such as Google, Microsoft, etc. the majority
+of Indian IT firms spread workers out all over the US rather than just a few
+central metropolitan areas.&lt;/p&gt;
+
+&lt;h3 id=&#34;top-indian-it-firm-workers-are-paid-above-the-prevailing-wage&#34;&gt;Top Indian IT Firm Workers Are Paid Above the Prevailing Wage&lt;/h3&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/perc_wage_infosys.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;In regards to the prevailing wage (~market wage for a geography) provided by
+H-1B employers, the workers brought in by the top Indian IT firms are paid
+decently above the market.&lt;/p&gt;
+
+&lt;h2 id=&#34;not-so-fast-questions-on-the-wages&#34;&gt;Not So Fast? Questions On The Wages.&lt;/h2&gt;
+
+&lt;p&gt;Using the numbers provided by H-1B employers, the workers brought in to the
+US seem to &lt;strong&gt;not&lt;/strong&gt; be cheap labor being paid under market wages. However, during
+this process, I ran across something strange. When we compare the wage maps between
+the Indian IT firms and major household-name American firms such as Google,
+Microsoft, etc. we see an extremely contrasted picture.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-do-top-indian-it-firms-pay-significantly-below-top-american-firms&#34;&gt;Why Do Top Indian IT Firms Pay Significantly Below Top American Firms?&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/num_wage_google.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;If we look at the wages for the American firms, the workers are consistently
+paid significantly higher. It can be argued that, of course, these American firms
+are the cream of the crop so they can afford to pay significantly higher. In addition
+many of them are located in very expensive areas.&lt;/p&gt;
+
+&lt;p&gt;If we look at the percentage vs prevailing wage, we can see that the percentage
+is not too different from many Indian IT firms.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/perc_wage_google.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;However&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;why-do-top-indian-it-firms-apply-workers-under-such-different-positions&#34;&gt;Why Do Top Indian IT Firms Apply Workers Under Such Different Positions?&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/perc_position_indian.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/perc_position_big.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The values above were calculated by constraining positions to just 5 positions.
+The number of applications for each company for each position was then calculated
+and then weighted to get the relative percentage a type of position is filed
+for to the rest.&lt;/p&gt;
+
+&lt;p&gt;For example, if company A had the following number of workers:
+[12, 14, 29, 60, 16] then the values calculated would be
+[12, 14, 29, 60, 16] / sum([12, 14, 29, 60, 16]).&lt;/p&gt;
+
+&lt;p&gt;We can see that Indian IT firms exceedingly do not file their workers under
+&lt;a href=&#34;https://www.bls.gov/soc/2010/soc151132.htm&#34;&gt;software developer&lt;/a&gt;, but instead
+the workers are filed under &lt;a href=&#34;https://www.bls.gov/soc/2010/soc151199.htm&#34;&gt;one&lt;/a&gt; of
+&lt;a href=&#34;https://www.bls.gov/soc/2010/soc151131.htm&#34;&gt;several&lt;/a&gt; &lt;a href=&#34;https://www.bls.gov/soc/2010/soc151121.htm&#34;&gt;others&lt;/a&gt;.
+This is &lt;strong&gt;exceedingly contrary&lt;/strong&gt; to many of the top American firms.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-do-these-title-differences-mean&#34;&gt;What Do These Title Differences Mean?&lt;/h2&gt;
+
+&lt;p&gt;The titles used are from the &lt;a href=&#34;https://www.bls.gov/soc/&#34;&gt;SOC&lt;/a&gt; codes filed with
+every application.&lt;/p&gt;
+
+&lt;p&gt;As a person in tech, the titles of computer programmer and software developer
+are mostly interchangeable with one another. To try and establish the difference,
+I looked into the definitions but I was only further confused because many of the
+tasks listed for a particular position seemed very like those in the others.&lt;/p&gt;
+
+&lt;h2 id=&#34;most-top-indian-it-firm-workers-are-underpaid-if-compared-to-workers-filed-as-software-dev&#34;&gt;Most Top Indian IT Firm Workers Are Underpaid If Compared to Workers Filed As Software Dev.&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.rheakara.com/img/perc_wage_wipro_compare.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Rest of gallery &lt;a href=&#34;google.com&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If we compare these workers&amp;rsquo; wages to H-1B workers in the same geo, filed as a
+&lt;a href=&#34;https://www.bls.gov/soc/2010/soc151132.htm&#34;&gt;Software Developer, Applications&lt;/a&gt;,
+most of these tech firms would be paying a very large number of their workers. The
+exception to this is IBM India and Tech Mahindra.&lt;/p&gt;
+
+&lt;p&gt;To be continued&amp;hellip;. this is a draft&lt;/p&gt;
+
+&lt;!-- - **[Computer Occupations, All Other](https://www.bls.gov/soc/2010/soc151199.htm)** - All computer occupations not listed separately
+- **[Computer Programmers](https://www.bls.gov/soc/2010/soc151131.htm)** - Create, modify, and test the code, forms, and script
+that allow computer applications to run. Work from specifications drawn up by software
+developers or other individuals. May assist software developers by analyzing user
+needs and designing software solutions. May develop and write computer programs
+to store, locate, and retrieve specific documents, data, and information.
+- **[Computer Systems Analyst](https://www.bls.gov/soc/2010/soc151121.htm)** - Analyze science, engineering, business, and other data processing problems to implement and improve computer systems. Analyze user requirements, procedures, and problems to automate or improve existing systems and review computer system capabilities, workflow, and scheduling limitations. May analyze or recommend commercially available software.
+- **[Software Developer, Applications](https://www.bls.gov/soc/2010/soc151132.htm)** - Develop, create, and modify general computer applications software or specialized utility programs. Analyze user needs and develop software solutions. Design software or customize software for client use with the aim of optimizing operational efficiency. May analyze and design databases within an application area, working individually or coordinating database development as part of a team. May supervise computer programmers.
+- **[Software Developer, Systems Software](https://www.bls.gov/soc/2010/soc151133.htm)** - Research, design, develop, and test operating systems-level software, compilers, and network distribution software for medical, industrial, military, communications, aerospace, business, scientific, and general computing applications. Set operational specifications and formulate and analyze software requirements. May design embedded systems software. Apply principles and techniques of computer science, engineering, and mathematical analysis. --&gt;
+</description>
+    </item>
     
     <item>
       <title>BMI Around the World Pt.1</title>
