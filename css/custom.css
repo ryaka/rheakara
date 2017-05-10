@@ -17,7 +17,8 @@ a {
 
 table {
     margin: auto;
-    width: 80%;
+    width: 100%;
+    table-layout: fixed;
     font-size: 0.85em;
     border: 1px solid #ededed;
 }
@@ -186,7 +187,7 @@ article h5 {
 /* default content rendering for single */
 
 .content-container {
-    padding: 3%;
+    padding: 0;
     float: none;
 }
 
