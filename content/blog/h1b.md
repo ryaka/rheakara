@@ -4,7 +4,7 @@ categories = [
 ]
 date = "2017-05-05T13:47:49-07:00"
 title = "Checking H-1B Claims"
-description = "Public draft..."
+description = "Are Americans Being Replaced With Cheap Foreign Workers?"
 hero = "/img/h1b.jpg"
 tags = [
 ]
@@ -16,7 +16,7 @@ tags = [
 The H-1B visa program has recently become a hot button topic. President Trump's
 administration have made allegations that the program has been abused to replace
 American workers with cheap labor. One claim the administration specifically
-made is that "that about 80 percent of H1B workers are paid less than the median
+made is "that about 80 percent of H1B workers are paid less than the median
 wage in their fields".
 
 > The result of that is that workers are often brought in well below market rates
@@ -26,7 +26,7 @@ Nasscom, an Indian IT lobby, responded to accusations by stating that the worker
 exported are highly skilled and that it is to meet a shortage in skills in the
 United States.
 
-Given that the issue is a hot political topic with contradicting assertions on
+Given that the issue has become a political topic with contradicting assertions on
 both sides, I wanted to take a look at the available data and try to make some
 conclusions for myself.
 
@@ -36,8 +36,8 @@ The data used for this comes from the US Department of Labor's disclosure on
 the LCA program [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm).
 
 The LCA is a document employers are required to fill out and get approved before
-they can file for an H-1B visa. The purpose is to protect workers from being
-taken advantage of and to protect American wages.
+they can file for an H-1B visa. The [purpose](https://en.wikipedia.org/wiki/Labor_Condition_Application)
+is to protect workers from being taken advantage of and to protect American wages.
 
 Because the US DOL does not publish the H-1B data directly, the LCA's are used as
 a proxy to determine applications for the H-1B visas. The method rests on the
@@ -46,18 +46,28 @@ assumption that employers filing an LCA will likely proceed to file for an H-1B 
 In addition, only LCA applications submitted in February and March are used. This
 is because H-1B applications have historically opened in early April. These two
 months are close enough to it that I believe there is a high correlation of the
-LCA applications submitted in this time period being submitted to H-1B. Some
-back of the envelope calculations also seem to give decent numbers. At the very least
-the general trends and compositions should be the same.
+LCA applications submitted in this time period being submitted to H-1B. The anomalous
+submissions for these two months somewhat support this.
 
 {{<figure
   src="/img/h1b_month_2016.png"
   caption="Submissions spike in February and March">}}
 
+Some back of the envelope calculations also seem to give decent numbers.
+
+*TODO*
+
+Granted, this is still not conclusive. but at the very least the general trends
+and compositions should be the same.
+
 As a quick aside, I initially planned to use data graciously published by a user
 off Kaggle [here](https://www.kaggle.com/nsharan/h-1b-visa). Unfortunately some of the
-information I wanted were removed in their sanitizing process so I proceeded to
-cleanse the data myself. The process for that is published in this [post](google.com).
+information I wanted were removed in the sanitizing process.
+
+As a result I proceeded to cleanse the data myself. The process for that is
+published in this [post](google.com).
+
+*TODO*
 
 ## General Trends in H-1B applications
 
@@ -72,8 +82,8 @@ up to 2016.
 
 ### There was little to no growth from 2016-2017
 
-The number of applications went from around 295,000 to 300,000, which is within
-the margin of error.
+The number of applications went from around 295,000 to 300,000 (within
+the margin of error).
 
 ### Computer / software related professions are hot
 
@@ -95,20 +105,24 @@ dropped from around 71% of all applications to 67%.
 
 ## Trends in major applicants
 
-IGATE TECHNOLOGIES INC., INTEL CORPORATION , IBM CORPORATION, AMAZON CORPORATE LLC,
-DELOITTE & TOUCHE LLP are respectively omitted.
-
 The White House recently made [accusations](https://www.whitehouse.gov/the-press-office/2017/04/17/background-briefing-buy-american-hire-american-executive-order) that some companies are abusing the H-1B system by flooding the
-system with applications to get a disproportionate amount of visas. In addition
-the companies "Tata, Infosys, Cognizant" were particular named in the accusations
-as some of these abusers. Finally the workers being imported as alleged as
-"actually less skilled and lower paid than the workers that they’re replacing".
+system with applications to get a disproportionate amount of visas. In addition to
+this claim, it is alleged that the workers are "actually less skilled and lower
+paid than the workers that they’re replacing".
 
-Nasscom, an Indian IT lobby, [responded to accusations](http://www.business-standard.com/article/companies/tcs-infosys-got-only-8-8-of-total-h-1b-visas-nasscom-s-rebuttal-to-us-117042401271_1.html) by stating that the workers
-exported are highly skilled and that the numbers merely fulfill a shortage
-in skills in the United States.
+Some companies specifically named were "Tata, Infosys, Cognizant". Despite not
+naming India specifically, there seemed to have been enough innuendo such that
+Nasscom, an Indian IT lobby, [responded to accusations](http://www.business-standard.com/article/companies/tcs-infosys-got-only-8-8-of-total-h-1b-visas-nasscom-s-rebuttal-to-us-117042401271_1.html) by stating that the workers exported are highly
+skilled and that the numbers merely fulfill a shortage in the United States.
 
-### "Only six Indian IT firms were among the top 20 recipients of the H-1B visas in fiscal 2015"
+Nasscom has continued to defend Indian workers [multiple](http://www.nasscom.in/nasscom-refutes-%E2%80%98charges-poor-skillset%E2%80%99-indian-h1b-visa-holders)
+[other](http://money.cnn.com/2017/04/19/technology/h1b-visa-reform-india-reacts/)
+[times](http://www.business-standard.com/article/companies/nasscom-says-indian-it-firms-get-20-of-h-1b-visas-pay-higher-wages-117042401043_1.html).
+
+### ["Only six Indian IT firms were among the top 20 recipients of the H-1B visas in fiscal 2015"](http://www.business-standard.com/article/news-ians/tcs-infosys-got-only-8-8-of-h-1b-visas-says-nasscom-contradicting-us-official-117042400883_1.html)
+
+(IGATE TECHNOLOGIES INC., INTEL CORPORATION , IBM CORPORATION, AMAZON CORPORATE LLC,
+DELOITTE & TOUCHE LLP are respectively omitted below)
 
 | COMPANY (2015)                                          | APPLICATIONS   | MEDIAN WAGE (ADJUSTED) |
 |---------------------------------------------------------|----------------|------------------------|
@@ -130,16 +144,18 @@ in skills in the United States.
 | .....                                                   | ....           | ......                 |
 | 20. AMAZON CORPORATE LLC                                | 662            | $113518                |
 
-The data matches Nasscom's claim given above. Namely these companies would be
-Infosys, Tata, IBM India, Wipro, Larsen & Toubro, and Cognizant.
+Looking at the top 20 applicants, we can see that the data supports Nasscom's claim.
+Namely these companies would be Infosys, Tata, IBM India, Wipro, Larsen & Toubro, and Cognizant.
 
-However, **all of these companies are actually in the top 15** which increases the
-relative weight. In addition if we also include companies that are merely
-American based subsidiaries but India headquartered, this would include
-HCL America and Tech Mahindra which means that **8 India-bodied IT firms are
-among the top 15 applicants of H-1B visas for 2015**.
+Something to note is that the range for these 6 companies actually
+**fall within the top 15**, which increases the relative weight. In addition, if
+we also include companies that are merely American based subsidiaries but India
+headquartered, this would include HCL America and Tech Mahindra.
 
-This trend is also upheld over the entire 2010 - 2017 period.
+This means that **at least 8 of the top 15 H-1B applicants for 2015 are either India based
+or have a parent company which is India based**.
+
+This trend also holds over the entire 2010 - 2017 period.
 
 | COMPANY (2010-2017)                                     | APPLICATIONS   | MEDIAN WAGE (ADJUSTED) |
 |---------------------------------------------------------|----------------|------------------------|
@@ -163,27 +179,32 @@ This trend is also upheld over the entire 2010 - 2017 period.
 ### Top Indian IT firm applications peaked in 2015
 
 The top 10 indian applicants reached a peak back in 2015 and as a net have
-decreased tremendously in past 2 years. Infosys is perhaps the most dramatic,
+decreased tremendously in the past 2 years. Infosys is perhaps the most dramatic,
 dropping from a high of ~18,000 applications in 2015 to ~9,000 in 2017.
 
 {{<figure src="/img/num_indian.png">}}
 
 ## Trends in wages
 
-One of the accusations put forth by the White House has been that the workers
+One of the accusations by the White House has been that the workers
 brought in by the supposed H-1B abusers are a form of cheap labor.
 
 To check on these claims, the median wages for the top 5 positions brought over
 by each of the top 6 Indian IT firms was calculated. In order to take geography
 into account, the wages were were calculated for each city.
 
-The heatmaps below show the wages and relative wages to the prevailing wage
-for the top 5 positions in the top 5 worksite cities for each company. To reduce
-variance, values are shown only if there are at least 10 such workers at each
-worksite.
+The heatmaps below show the workers' wages for the top 5 positions in the top 5
+worksite cities for each company. To reduce variance, values are shown only if
+there are at least 10 such workers at each worksite.
+
+The percentage of the workers' wage vs the market wage in the same geo is also
+shown. The values for this are calculate using the workers' wage and prevailing
+wage filed by employers.
 
 Exemplary heatmaps are chosen below to save space. A full gallery for all the
 companies can be found [here](google.com).
+
+*TODO*
 
 ### Top Indian IT Firm Workers Are Spread Out
 
@@ -193,58 +214,71 @@ Unlike some of the major tech names such as Google, Microsoft, etc. the majority
 of Indian IT firms spread workers out all over the US rather than just a few
 central metropolitan areas.
 
-### Top Indian IT Firm Workers Are Paid Above the Prevailing Wage
+### Top Indian IT Firm Workers Are Paid Above the Market Wage
 
 {{<figure src="/img/perc_wage_infosys.png">}}
 
-In regards to the prevailing wage (~market wage for a geography) provided by
-H-1B employers, the workers brought in by the top Indian IT firms are paid
-decently above the market.
+In regards to the market wage provided by H-1B employers, the workers brought
+in by the top Indian IT firms are paid mostly above the market.
 
-## Not So Fast? Questions On The Wages.
+## But Not So Fast. Questions On The Wages.
 
 Using the numbers provided by H-1B employers, the workers brought in to the
-US seem to **not** be cheap labor being paid under market wages. However, during
-this process, I ran across something strange. When we compare the wage maps between
-the Indian IT firms and major household-name American firms such as Google,
-Microsoft, etc. we see an extremely contrasted picture.
+US seem to **not** be cheap labor being paid under market wages.
 
-## Why Do Top Indian IT Firms Pay Significantly Below Top American Firms?
+However, during this process, I ran across something strange. When we compare
+the wage maps between the Indian IT firms and major household-name American firms
+such as Google, Microsoft, etc. we see an extremely contrasted picture.
+
+(As above, a full gallery can be found [here](google.com))
+
+## Why Do Top Indian IT Firms Pay So Much Below Top American Firms?
 
 {{<figure src="/img/num_wage_google.png">}}
 
-If we look at the wages for the American firms, the workers are consistently
-paid significantly higher. It can be argued that, of course, these American firms
-are the cream of the crop so they can afford to pay significantly higher. In addition
-many of them are located in very expensive areas.
+If we look at the wages for the **American firms**, the workers are consistently
+**paid significantly higher**.
 
-If we look at the percentage vs prevailing wage, we can see that the percentage
-is not too different from many Indian IT firms.
+I was certainly expecting that the top American firms would pay higher for their
+workers and I'm sure many readers were expecting the same. After all, many workers
+dream of working at many of these companies. In addition many of them are located
+in areas with a high cost of living. But still I did not expect just how extreme the
+difference would be.
+
+Using this result, a question I have is if the amount of workers brought in is
+simply to fit a massive demand / shortage of supply in the United States, how can
+there be such a disparity in wages? The United States' timezones (ignoring Hawaii / Alaska)
+vary only 3 hours so I would have assumed that some form of labor arbitrage, perhaps
+with telecommuting, would have removed this amount of variance.
+
+A possible explanation I looked into was geography. Looking at the percentage
+difference to the market wage, we can see that it is not too different from many
+Indian IT firms.
 
 {{<figure src="/img/perc_wage_google.png">}}
 
-However......
+However this only led to another question...
 
 ## Why Do Top Indian IT Firms Apply Workers Under Such Different Positions?
+
+The values above were calculated by looking at just 5 possible tech positions and
+calculating the relative percentage composition for each company.
+
+For example, for some company A:
+```
+num_workers = [12, 14, 29, 60, 16]
+percentage_values = num_workers / sum(num_workers)
+```
 
 {{<figure src="/img/perc_position_indian.png">}}
 
 {{<figure src="/img/perc_position_big.png">}}
 
-The values above were calculated by constraining positions to just 5 positions.
-The number of applications for each company for each position was then calculated
-and then weighted to get the relative percentage a type of position is filed
-for to the rest.
-
-For example, if company A had the following number of workers:
-[12, 14, 29, 60, 16] then the values calculated would be
-[12, 14, 29, 60, 16] / sum([12, 14, 29, 60, 16]).
-
 We can see that Indian IT firms exceedingly do not file their workers under
 [software developer](https://www.bls.gov/soc/2010/soc151132.htm), but instead
 the workers are filed under [one](https://www.bls.gov/soc/2010/soc151199.htm) of
 [several](https://www.bls.gov/soc/2010/soc151131.htm) [others](https://www.bls.gov/soc/2010/soc151121.htm).
-This is **exceedingly contrary** to many of the top American firms.
+This is **exceedingly contrary** to many of the top American firms. Why is this?
 
 ## What Do These Title Differences Mean?
 
@@ -252,29 +286,52 @@ The titles used are from the [SOC] (https://www.bls.gov/soc/) codes filed with
 every application.
 
 As a person in tech, the titles of computer programmer and software developer
-are mostly interchangeable with one another. To try and establish the difference,
-I looked into the definitions but I was only further confused because many of the
-tasks listed for a particular position seemed very like those in the others.
+are mostly interchangeable with one another to me. To try and understand the difference,
+I looked into the definitions but even these seemed interchangeable with one
+another. I also looked at the titles used by the companies internally and it
+still was ambiguous, with the titles being things like "Technology Lead", "Computer
+Programmer", "Programmer Analyst" and "Developer".
 
-## Most Top Indian IT Firm Workers Are Underpaid If Compared to Workers Filed As Software Dev.
+The question I have then is how are these titles determined for workers and
+what about it makes them disqualified to be applied as software developers in
+accordance to SOC?
+
+
+## Most Top Indian IT Firm Workers Are Paid Relatively Less Than Software Devs
+
+For the sake of curiosity, I plotted what wages for the Indian IT companies'
+workers compared to H-1B software developers in the same geo looked like.
 
 {{<figure src="/img/perc_wage_wipro_compare.png">}}
 
-Rest of gallery [here](google.com).
+From this it seems that many Indian IT workers outside of IBM India and Tech
+Mahindra are paid significantly less than those filed [software devs](https://www.bls.gov/soc/2010/soc151132.htm),
+adding credence to there being a cause for the difference.
 
-If we compare these workers' wages to H-1B workers in the same geo, filed as a
-[Software Developer, Applications] (https://www.bls.gov/soc/2010/soc151132.htm),
-most of these tech firms would be paying a very large number of their workers. The
-exception to this is IBM India and Tech Mahindra.
+# Take Away
 
-To be continued.... this is a draft
+In the past 8 years, the number of H-1B visa applications has grown nearly five-fold.
+Such growth has not gone unnoticed and has become a political top, with calls for
+reform abound.
 
-<!-- - **[Computer Occupations, All Other](https://www.bls.gov/soc/2010/soc151199.htm)** - All computer occupations not listed separately
-- **[Computer Programmers](https://www.bls.gov/soc/2010/soc151131.htm)** - Create, modify, and test the code, forms, and script
-that allow computer applications to run. Work from specifications drawn up by software
-developers or other individuals. May assist software developers by analyzing user
-needs and designing software solutions. May develop and write computer programs
-to store, locate, and retrieve specific documents, data, and information.
-- **[Computer Systems Analyst](https://www.bls.gov/soc/2010/soc151121.htm)** - Analyze science, engineering, business, and other data processing problems to implement and improve computer systems. Analyze user requirements, procedures, and problems to automate or improve existing systems and review computer system capabilities, workflow, and scheduling limitations. May analyze or recommend commercially available software.
-- **[Software Developer, Applications](https://www.bls.gov/soc/2010/soc151132.htm)** - Develop, create, and modify general computer applications software or specialized utility programs. Analyze user needs and develop software solutions. Design software or customize software for client use with the aim of optimizing operational efficiency. May analyze and design databases within an application area, working individually or coordinating database development as part of a team. May supervise computer programmers.
-- **[Software Developer, Systems Software](https://www.bls.gov/soc/2010/soc151133.htm)** - Research, design, develop, and test operating systems-level software, compilers, and network distribution software for medical, industrial, military, communications, aerospace, business, scientific, and general computing applications. Set operational specifications and formulate and analyze software requirements. May design embedded systems software. Apply principles and techniques of computer science, engineering, and mathematical analysis. -->
+In my quest to make sense of the contradicting claims on the opposing sides, I've learned
+just how tech industry dominant the visas applied for is. I've also learned that
+many Indian IT firms also started to significantly pull back starting in 2015
+and continue to present day.
+
+However I also found a peculiar difference between the types of positions that
+major Indian IT firms were applying for and major American IT firms were
+applying for. The types of positions filed for by the former in general are paid
+significantly less than the types of positions filed for by the latter, despite
+the difference in the definition of the positions being unclear (at least to me).
+
+What exactly is the cause of this difference?
+
+- Is it because the workers are in fact less skilled as claimed by the White House so they are filed differently?
+- Is it because it allows these companies to pay the workers less for the same job because the prevailing wages for these titles are less than that of software devs?
+- Or is it because of something else much more sinister or innocuous?
+
+Unfortunately this is something I'm so far unable to conclude, but the
+data so far appears dubious and potentially supports the White House's claims.
+
+There are still TODOs so consider this a less rough draft
